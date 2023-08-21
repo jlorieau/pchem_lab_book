@@ -1,17 +1,10 @@
-Welcome to Physical Chemistry Labbook's documentation!
-======================================================
+Physical Chemistry Labbook
+==========================
+
+
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+   :maxdepth: 1
+   :caption: Projects
 
    projects/labworks/index
-
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
