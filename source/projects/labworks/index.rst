@@ -1,8 +1,5 @@
-Labworks
-********
-
-Audrey Dell Hammerich, Luke Hanley, Preston Snee and Justin Lorieau
-Yoshitaka Ishii, Sanja Tepavcevic, and Ben Stokes
+Thermodynamics and Gas Laws
+***************************
 
 Introduction
 ============
@@ -637,15 +634,16 @@ mass of any unburned wax that has dripped from the candle.
 Materials
 ^^^^^^^^^
 
-- styrofoam cup or insulated plastic mug
-- ring stand
-- candle
-- ice
-- thermistor
-- metal cup
-- clay triangle
-- bunsen burner or hotplate
-- thermometer for thermistor calibration
++--------------------------------------+---------------------------------------+
+| Styrofoam cup or plastic mug         | ring stand                            |
++--------------------------------------+---------------------------------------+
+| candle                               | ice                                   |
++--------------------------------------+---------------------------------------+
+| thermistor or thermometer            | metal cup                             |
++--------------------------------------+---------------------------------------+
+| clay triangle                        | bunsen burner or hotplate             |
++--------------------------------------+---------------------------------------+
+
 
 Procedure
 ^^^^^^^^^
@@ -762,11 +760,13 @@ vaporization.
 Materials
 ^^^^^^^^^
 
-- 3 x 50-mL Erlenmeyer flasks
-- 1 hotplate
-- forceps
-- gloves
-- thermistor or thermometer
++--------------------------------------+---------------------------------------+
+| 3 x 50-mL Erlenmeyer flasks          | 1 hotplate                            |
++--------------------------------------+---------------------------------------+
+| forcep or tongs                      | thermal gloves                        |
++--------------------------------------+---------------------------------------+
+| thermometer or thermistor            |                                       |
++--------------------------------------+---------------------------------------+
 
 Procedure
 ^^^^^^^^^
@@ -884,13 +884,16 @@ which remains at constant pressure.
 Materials
 ^^^^^^^^^
 
-- 400-mL beaker
-- large (1000-mL) beaker
-- 125-mL Erlenmeyer flask with rubber stopper
-- 100-mL graduated cylinder
-- crucible tongs
-- Bunsen burner or hot plate
-- thermometer or thermistor
++--------------------------------------+---------------------------------------+
+| 400-mL beaker                        | large (1000-mL) beaker                |
++--------------------------------------+---------------------------------------+
+| 125-mL Erlenmeyer flask w rubber     | 100-mL graduated cylinder             |
+| stopper                              |                                       |
++--------------------------------------+---------------------------------------+
+| crucible tongs                       | Bunsen burner or hotplate             |
++--------------------------------------+---------------------------------------+
+| thermometer or thermistor            |                                       |
++--------------------------------------+---------------------------------------+
 
 Procedure
 ^^^^^^^^^
@@ -1035,9 +1038,20 @@ Experiment 3
     and the cold volume-to-temperature ratio?
 
 
-
-
 References
 ==========
 .. [Vernier] Vernier LabPro User's Manual, Vernier Software & Technology,
     Beaverton, Oregon. 2013. *url*: http://www2.vernier.com/labpro/labpro_user_manual.pdf
+
+Contributors
+============
+
++--------------------------------------+---------------------------------------+
+| Audrey Dell Hammerich                | Luke Hanley                           |
++--------------------------------------+---------------------------------------+
+| Yoshitaka Ishii                      | Justin Lorieau                        |
++--------------------------------------+---------------------------------------+
+| Preston Snee                         | Ben Stokes                            |
++--------------------------------------+---------------------------------------+
+| Sanja Tepavcevic                     |                                       |
++--------------------------------------+---------------------------------------+
