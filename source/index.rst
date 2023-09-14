@@ -14,7 +14,7 @@ Physical Chemistry Labbook
     :maxdepth: 1
     :caption: Experiments
 
-    experiments/labworks/index
+    experiments/thermo/index
     experiments/nmr/index
 
 .. toctree::
