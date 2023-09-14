@@ -590,13 +590,125 @@ Collect the following spectra with the help of the NMR TA:
 Results and Discussion
 ======================
 
+Error Analysis
+--------------
+
+The error in the pH measurement can be estimated from the pH meter reading of
+the standard solutions.
+
+The error in the chemical shift can be estimated using a peak or a group of
+peaks full-width at half-height (FWHH) and the peak's signal-to-noise ration
+(SNR):
+
+.. math::
+
+    \sigma_\delta = \frac{FWHH}{2 \cdot SNR}
+
+The peak integral's error can be estimated by integrating over a similar range
+in the noise region of the spectrum.
+
+Structural Analysis
+-------------------
+
+Identify and draw the molecule for the unknown. In the molecule, include
+the assignment of different spins, as they related to the assignments in the
+tables (see `Achievements`_).
+
+.. admonition:: Example Molecule Assignment
+    :class: note
+
+    The following is an example molecular diagram for ethanol and the first
+    chemical shift table.
+
+    .. image:: structures/ethanol.png
+        :width: 240
+
+    .. list-table:: NMR |1H| chemical shift assignments for 1mM ethanol in water (500-MHz)
+       :header-rows: 1
+
+       * - Assignment
+         - Chemical Shift
+         - Integral
+         - Multiplicity
+         - J-coupling
+       * - H\ :sub:`a`
+         - 1.20 ± 0.02 ppm
+         - 3.02 ± 0.02
+         - triplet
+         - 5 ± 1 Hz
+       * - H\ :sub:`b`
+         - 2.43 ± 0.02 ppm
+         - 1.99 ± 0.02
+         - doublet
+         - 5 ± 1 Hz
+       * - H\ :sub:`c`
+         - Not observed
+         - -
+         - -
+         - -
+
+.. admonition:: List of possible unknowns
+    :class: note
+
+    .. list-table::
+
+        * - 2-methylpyridine
+          - 3-methylpyridine
+          - 4-methylpyridine
+        * - 2-ethylpyridine
+          - 3-ethylpyridine
+          - 4-ethylpyridine
+        * - 2,3-dimethylpyridine
+          - 2,4-dimethylpyridine
+          - 2,5-dimethylpyridine
+        * - 2,6-dimethylpyridine
+          - 3,4-dimethylpyridine
+          - 3,5-dimethylpyridine
+        * - 2-ethyl-3-methylpyridine
+          - 2-ethyl-4-methylpyridine
+          - 2-ethyl-5-methylpyridine
+        * - 2-ethyl-6-methylpyridine
+          - 3-ethyl-2-methylpyridine
+          - 3-ethyl-4-methylpyridine
+        * - 3-ethyl-5-methylpyridine
+          - 4-ethyl-2-methylpyridine
+          - 4-ethyl-3-methylpyridine
+        * - 5-ethyl-2-methylpyridine
+          -
+          -
+
 Calculations
 ------------
 
 pKa Non-Linear Regression
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
+The chemical shift pH titration equation is the following:
 
+.. math::
+
+    \delta_{ave} = \delta_{HA} \left( \frac{1}{10^{pH - pKa} + 1} \right) +
+    \delta_{A} \left(1 - \frac{1}{10^{pH - pKa} + 1}\right)
+
+Alternatively, the function can be re-arranged for the non-linear regression
+
+.. math::
+
+    \delta_{ave} = \delta_{A} + \frac{\delta_{HA} - \delta_{A}}{10^{pH - pKa} + 1}
+
+Save the pH values (x-values), the chemical shifts (y-values) and the
+corresponding chemical shift errors (y errors) as a csv file. Load the csv
+file in your plotting program and conduct a non-linear regression with 3
+parameters: :math:`\delta_A`, :math:`\delta_{HA}` and pKa. Different variable
+names (x, y) and parameter names (a, b, c) may need to be used in the input
+for the non-linear regression.
+
+.. math::
+
+    y = a + \frac{b - a}{10^{x - c} + 1}
+
+Include the final plot, the fit parameters and their uncertainties as well as
+the :math:`\chi^2` and :math:`\chi^2_{reduced}` of the fits.
 
 Questions
 ---------
