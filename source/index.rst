@@ -7,6 +7,8 @@ Physical Chemistry Labbook
 
     safety
     notebook/index
+    report/short
+
 
 .. toctree::
    :maxdepth: 1
