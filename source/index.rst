@@ -11,8 +11,14 @@ Physical Chemistry Labbook
 
 
 .. toctree::
-   :maxdepth: 1
-   :caption: Experiments
+    :maxdepth: 1
+    :caption: Experiments
 
-   projects/labworks/index
-   projects/nmr/index
+    experiments/labworks/index
+    experiments/nmr/index
+
+.. toctree::
+    :maxdepth: 1
+    :caption: Appendix
+
+    changes

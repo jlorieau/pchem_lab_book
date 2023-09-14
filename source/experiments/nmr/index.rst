@@ -401,7 +401,7 @@ atoms (C, N or O) with hydrogens within a molecule.
     of the solvent. The splittings from homonuclear J-coupling were suppressed
     in the simulated spectrum.
 
-    .. plot:: projects/nmr/plots/cosy2d_ethanol.py
+    .. plot:: experiments/nmr/plots/cosy2d_ethanol.py
 
 |1H|-X 1-dimensional DEPT
 ~~~~~~~~~~~~~~~~~~~~~~~~~
