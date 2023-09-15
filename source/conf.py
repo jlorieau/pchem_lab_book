@@ -27,6 +27,13 @@ exclude_patterns = []
 
 html_theme = "sphinx_book_theme"
 html_static_path = ['_static']
+html_css_files = [
+    'custom.css',
+]
+
+html_title = "Physical Chemistry Labbook"
+# html_logo = "path/to/logo.png"
+# html_favicon = "path/to/favicon.ico"
 
 # -- Options for LaTeX output ------------------------------------------------
 # https://www.sphinx-doc.org/en/master/latex.html

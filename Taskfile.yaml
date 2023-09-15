@@ -40,5 +40,5 @@ tasks:
     sources:
       - "**/*.md"
       - "**/*.rst"
-      - "_static/**"
-      - "./conf.py"
+      - "source/_static/**"
+      - "source/conf.py"
