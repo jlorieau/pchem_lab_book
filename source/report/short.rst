@@ -1,5 +1,28 @@
+Grading and Report
+******************
+
+Grading
+=======
+
+Experiments that require a report will be graded as follows:
+
+.. list-table::
+    :header-rows: 1
+
+    * - points
+      - description
+    * - 60
+      - short lab report
+    * - 20
+      - answers to questions
+    * - 20
+      - achievements
+
+Both the answers to questions and achievements are different for each
+experiment.
+
 Short Lab Report
-****************
+================
 
 The laboratory report will give the results of the experiment, show your
 understanding of the relevant principles involved, demonstrate your ability to
@@ -8,6 +31,7 @@ in a scientific manner. Reports must be typed using a word processor,
 single-sided and double spaced, and submitted through Blackboard as a docx file.
 
 The short lab report includes the following components:
+
 
 #. Title Page
 
@@ -27,13 +51,13 @@ The short lab report includes the following components:
    assistant and printouts, spectra etc.
 
 Title Page
-==========
+----------
 
 The title page contains the full title of the laboratory experiment, your name,
 your lab partner’s name, your TA’s name, and the date.
 
 Abstract/Overview
-=================
+-----------------
 
 **Length**: 1 paragraph, less than or equal to 5 sentences
 
@@ -56,7 +80,7 @@ been done. The use of first person is strictly avoided.
     hydrolysis and tracking the efficiency of proteases.
 
 Materials and Methods
-=====================
+---------------------
 
 **Length**: 1-2 paragraphs
 
@@ -70,7 +94,7 @@ specific equipment used and the general theory of the experimental methods.
 This can usually be done in a short paragraph.
 
 Results
-=======
+-------
 
 The results section should summarize the data from the experiments without
 discussing their implications. The data should be organized into tables,
@@ -98,14 +122,14 @@ on trivial details. Many students organize and write the results section
 before the rest of the report.
 
 Answers to Questions
-====================
+--------------------
 
 Write the question number and answer the **4** assigned questions. Include
 all derivations and write in descriptive paragraphs to receive all points.
 **Do not copy the question in your report**.
 
 Conclusions
-===========
+-----------
 
 **Length**: 1 paragraph
 
@@ -113,7 +137,7 @@ This is a short paragraph about purpose of experiment, results, errors,
 problems, with an emphasis upon your interpretation of your results.
 
 References
-==========
+----------
 
 This section lists all articles or books cited in your report. It is not the
 same as a bibliography, which simply lists references regardless of whether
