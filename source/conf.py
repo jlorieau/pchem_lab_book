@@ -22,6 +22,8 @@ extensions = [
 templates_path = ['_templates']
 exclude_patterns = []
 
+numfig = True
+
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
@@ -34,6 +36,12 @@ html_css_files = [
 html_title = "Physical Chemistry Labbook"
 # html_logo = "path/to/logo.png"
 # html_favicon = "path/to/favicon.ico"
+
+html_theme_options = {
+    "extra_footer": '<a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.en">'
+                    '<img src="http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-nc-nd.svg" />'
+                    ' CC BY-NC-ND 4.0</a>',
+}
 
 # -- Options for LaTeX output ------------------------------------------------
 # https://www.sphinx-doc.org/en/master/latex.html
