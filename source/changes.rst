@@ -35,3 +35,10 @@ Nuclear Magnetic Resonance
 
 - **2023**: Rewritten by Justin Lorieau with online book format
 - **2013-2014**: Written by Yoshitaka Ishii, Dan McElheny, and Isamu Matsuda
+
+Laser-Induced Fluorescence
+--------------------------
+
+- **2023**: Revised by Justin Lorieau with online book format
+- **2003**: Revised by Audrey Dell Hammerich
+- **1995**: Written by Jonathan Gutow
