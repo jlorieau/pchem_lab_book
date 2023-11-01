@@ -9,3 +9,8 @@ ol.arabic li {
   margin: 0;
   bottom: 0;
 }
+
+/* Line under level-3 headings */
+h3 {
+  border-bottom: 1px solid #999;
+}
