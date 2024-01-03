@@ -1,0 +1,1326 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Nuclear Magnetic Resonance &#8212; Physical Chemistry Lab Book</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="../../_static/plot_directive.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=83a74c37" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="../../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
+
+    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../_static/doctools.js?v=888ff710"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
+    <script src="../../_static/design-tabs.js?v=36754332"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'experiments/nmr/index';</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Laser-Induced Fluorescence" href="../lif/index.html" />
+    <link rel="prev" title="Thermodynamics and Gas Laws" href="../thermo/index.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/CAMP.HRZ.SM.RGB.SVG" class="logo__image only-light" alt=""/>
+    <script>document.write(`<img src="../../_static/CAMP.HRZ.SM.INVT.RBG.SVG" class="logo__image only-dark" alt=""/>`);</script>
+  
+  
+    <p class="title logo__title">Physical Chemistry Lab Book</p>
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../safety.html">Safety Rules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../notebook/index.html">Notebook Format</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../report/short.html">Grading and Report</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Experiments</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../thermo/index.html">Thermodynamics and Gas Laws</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Nuclear Magnetic Resonance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lif/index.html">Laser-Induced Fluorescence</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../diffraction/index.html">Nanoparticle</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Appendix</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../changes.html">Authors and Changes</a></li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="sidebar-primary-item">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/experiments/nmr/index.rst" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.rst</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Nuclear Magnetic Resonance</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#chemical-shifts">Chemical Shifts</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#j-couplings">J-couplings</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#acid-base-titration">Acid-Base Titration</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#nmr-experiments">NMR Experiments</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#h-1-dimensional-spectrum-with-h2o-suppression"><sup>1</sup>H 1-dimensional spectrum with H<sub>2</sub>O suppression</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#h-1h-2-dimensional-correlation-spectroscopy-cosy"><sup>1</sup>H-<sup>1</sup>H 2-dimensional COrrelation SpectroscopY (COSY)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#h-x-1-dimensional-dept"><sup>1</sup>H-X 1-dimensional DEPT</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#h-x-2-dimensional-hetcor"><sup>1</sup>H-X 2-dimensional HETCOR</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#procedures">Procedures</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#materials">Materials</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-ph-meter-calibration">A. pH meter calibration</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#b-1-0m-hcl-solution-10-ml">B. 1.0M HCl solution, 10-mL</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#c-unknown-in-100mm-phopshate-buffer-10-d2o-10-0-ml">C. Unknown in 100mM phopshate buffer, 10% D<sub>2</sub>O, 10.0-mL</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#d-titration-of-the-solution-with-the-unknown">D. Titration of the solution with the unknown</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#e-collection-of-nmr-spectra">E. Collection of NMR spectra</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#results-and-discussion">Results and Discussion</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#error-analysis">Error Analysis</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#structural-analysis">Structural Analysis</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#calculations">Calculations</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pka-non-linear-regression">pKa Non-Linear Regression</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#questions">Questions</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#grading-rubric">Grading Rubric</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#achievements">Achievements</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#penalties">Penalties</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section id="nuclear-magnetic-resonance">
+<h1>Nuclear Magnetic Resonance<a class="headerlink" href="#nuclear-magnetic-resonance" title="Link to this heading">#</a></h1>
+<section id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h2>
+<p>Spinning charges generate magnetic fields. Molecules comprise many sources
+of magnetic fields: the movement of electrons in bonds, the spin of electrons
+(up or down), the spin of nuclei, and others. The magnetic fields from electron
+or nuclear spins can be represented by magnetic dipole moments–i.e. very
+small north-south bar magnets. These magnetic dipoles align with or against
+an applied, strong magnetic field, and we can use electromagnetic radiation,
+like UV-Vis spectroscopy, to stimulate transitions and spin flips. We can
+probe spin flips for electrons, with electron spin resonance (ESR) spectroscopy,
+or we can probe spin flips for nuclei, with nuclear magnetic resonance (NMR)
+spectroscopy.</p>
+<p>In chemistry, the most commonly probed spin types are spin-1/2 systems due to
+their abundance and spectroscopic simplicity.
+Electrons and nuclear isotopes such as <sup>1</sup>H, <sup>13</sup>C,
+<sup>15</sup>N have an inherent spin-1/2. In a magnetic field, their
+spin aligns with the magnetic field (m = 1/2) or against the magnetic field
+(m = -1/2). All of these particles have the same amount of spin, but they
+differ in their charge densities, which is quantified by a gyromagnetic ratio,
+<span class="math notranslate nohighlight">\(\gamma\)</span>. In a 14.1 Tesla magnetic field, transitions for electrons,
+<sup>1</sup>H, <sup>13</sup>C and <sup>15</sup>N require electromagnetic
+radiation with frequencies of 394-GHz, 600-MHz, 151-MHz and 60.8-MHz,
+respectively. In this experiment, we will focus on nuclear spin
+transitions for <sup>1</sup>H.</p>
+<p>What makes NMR interesting from a chemist’s perspective is that the local
+magnetic fields around spins are very sensitive to the local environment and
+contain rich information. A <sup>1</sup>H spin, for example, is bonded and
+surrounded by eletrons which, when in a magnetic field, generate their own
+local magnetic field that opposes the applied field. This field, known as
+the chemical shift, depends on internal properties like electron density and
+orientation, and at the simplest level, it’s a direct measure of
+electronegativity and bonding structure. Magnetic fields at each spin also
+depend on other spins in the molecule, and additional peaks (splittings) are
+manifested from spins that communicate through the bonding network (J-coupling)
+or through space (dipole-dipole).</p>
+<p>The hypersensitivity of nuclear spin field to local chemical environments isn’t
+he only advantage of NMR spectroscopy. Since we can produce non-equilibrium
+spin states with relatively long lifetimes–100s of microseconds to seconds–we
+can use time-dependent pulse experiments for spectroscopy. Practically speaking,
+time-dependent Fourier-Transform NMR allows spectroscopists to measure and
+correlate spectra in multiple dimensions.</p>
+<p>NMR is not without drawbacks: it can require large amounts of sample
+(milligrams), and it can be limited in the size and complexity of molecules
+studied.</p>
+<section id="chemical-shifts">
+<h3>Chemical Shifts<a class="headerlink" href="#chemical-shifts" title="Link to this heading">#</a></h3>
+<p>Chemical shifts and J-couplings are not the strongest magnetic interactions,
+but their impact remains detectable for molecules tumbling (rotating) in
+solution isotropically–i.e. rotating in any direction.</p>
+<p>In solution NMR, peaks change position (frequency) in a spectrum due to, at
+least, chemical shifts. A peak can either be <em>downfield</em> (<em>deshielded</em>),
+in which it has a higher frequency, or <em>upfield</em> (<em>shielded</em>), in which it has
+a lower frequency. For historical reasons, the left-hand side of a 1D NMR
+spectrum is downfield and <em>increases</em> in frequency whereas the right-hand side
+of a 1D NMR spectrum is upfield and <em>decreases</em> in frequency.</p>
+<p>The magnitude of the magnetic field generated by chemical
+shifts increase in proportion to the strength of the applied magnetic field.
+For example, the chemical shift magnetic fields in a 10 Tesla NMR are twice
+as large as in a 5 Tesla NMR. Chemical shift magnetic fields are nevertheless
+much smaller than the applied magnetic field–on the order of a million times
+smaller. To be able to compare chemical shifts between NMR spectrometers with
+different applied magnetic fields, NMR spectroscopists devised a new unit,
+parts-per-million, taken by dividing the magnetic field strength of the
+chemical shift by the applied field strength.</p>
+<p>Chemical shifts can be used to identify the types of atoms in a molecule.
+Consider the <sup>1</sup>H spins for hydrogens in a methyl group and an aldehyde.
+The aldehyde has a much higher partial-positive charge on the hydrogen due to
+the electron-withdrawing characteristic of the carbonyl. Consequently,
+aldehyde protons are more downfield or deshielded than methyl protons.
+Aldehyde <sup>1</sup>H spins appear at chemical shifts of 9-10ppm on the
+left-hand side of the spectrum whereas methyl <sup>1</sup>H spins appear at
+1-2ppm on the right-hand side of the spectrum. Atomic nuclei that are
+surrounded by a larger amount of electron density are upfield (smaller ppm
+value) to nuclei with less electron density (higher ppm value).</p>
+<p>Since the position of peaks depends on electronegativity and other secondary
+factors, the position of peaks in a spectrum can be used to identify different
+functional groups or the number of spins within a molecule.</p>
+</section>
+<section id="j-couplings">
+<h3>J-couplings<a class="headerlink" href="#j-couplings" title="Link to this heading">#</a></h3>
+<p>The magnetic fields generated by spins influence the local magnetic fields
+of other spins. These are known as spin-spin couplings. This influence can be
+directly through space or indirectly through the polarization of electrons in
+the bonds between spins, like the chemical shift. The direct interaction of
+spin magnetic fields–known as the dipole-dipole interaction
+or dipolar interaction–is much stronger. For molecules that tumble
+isotropically in solution, the dipolar interaction field averages to zero,
+and it cannot be detected directly from the solution NMR spectrum. The spin-spin
+coupling mediated through the electron cloud in bonds between spins is much
+smaller, but it can be detected directly in the solution NMR spectrum. This
+interaction is known as the J-coupling.</p>
+<p>J-couplings produce splittings for magnetically non-equivalent spins. Splittings
+are patterns in which a single peak–known as a singlet–can be divided into
+groups of smaller peaks like a doublet (two peaks), triplet (three peaks),
+quartet (four peaks) or more complicated pattern. The splitting pattern and
+intensities of the peak splittings contain useful information on the types of
+spins that are J-coupled. The intensities of the sub-peaks in a splitting group
+follow the Boltzmann thermal distribution for each spin, and they are manifested
+as a Pascal triangle.</p>
+<p>Together with the chemical shift, J-couplings can be used to identify the
+bonding network within a molecule and to identify the molecule itself.</p>
+<div class="note admonition">
+<p class="admonition-title">Example: Acetaldehyde J<sub>HH</sub>-couplings</p>
+<p>Acetaldehyde (<span class="math notranslate nohighlight">\(\ce{CH3CHO}\)</span>) has 2 types of <sup>1</sup>H
+spins: a single aldehyde hydrogen and three methyl hydrogens. The J-coupling
+between these spins are separated by 3 bonds, and it is referred to as a
+<sup>3</sup>J-coupling. The methyl <sup>1</sup>H spins are split into a doublet:
+one peak comes from the aldehyde <sup>1</sup>H spins that point parallel to the
+applied magnetic field (spin up) and one peak comes from the aldehyde
+<sup>1</sup>H spins that point anti-parallel to the applied magnetic field
+(down down).</p>
+<p>The aldehyde <sup>1</sup>H spin is split into a quartet with a 1:3:3:1 intensity
+pattern. The outer peaks arise from methyl <sup>1</sup>H spins that have up-up-up
+or down-down-down spins. Multiple configurations generate the inner two
+peaks. The first inner peak is generated for methyl <sup>1</sup>H spins in the
+down-up-up, up-down-up or up-up-down configuration, and the second inner peak is
+generated for methyl <sup>1</sup>H spins in the down-down-up, down-up-down or
+up-down-down configuration. The intensities of the peaks follow the number of
+configurations that generate each peak: the outer peaks have a relative intensity
+of ‘1’ because only 1 configuration can generate those peaks whereas each of
+the two inner peaks are generated by 3 configurations, and these have a relative
+intensity of ‘3’.</p>
+</div>
+</section>
+<section id="acid-base-titration">
+<h3>Acid-Base Titration<a class="headerlink" href="#acid-base-titration" title="Link to this heading">#</a></h3>
+<p>Changes in the electron density around spins can produce large changes in
+chemical shifts. One example of a large change in electron distribution
+are the acid-base forms of a molecule. By titrating an ionizable group, the
+chemical shifts of the spins around that ionizable group can change
+significantly. These changes in chemical shift can be used to measure the
+pKa of these ionizable groups.</p>
+<div class="note admonition">
+<p class="admonition-title">Example: Titration of phosphate</p>
+<p><sup>31</sup>P is a naturally abundant spin-1/2 nucleus, and its
+chemical shift can be used to monitor the pKa and protonation states of
+phosphate <a class="reference internal" href="#biochem1981" id="id1"><span>[Biochem1981]</span></a>. As the pH of a solution with phosphate
+(<span class="math notranslate nohighlight">\(\ce{PO4}\)</span>) is lowered, the phosphate oxygens are protonated and
+there is less electron density on the <sup>31</sup>P nucleus, producing a
+downfield (deshielded) change in chemical shift.</p>
+</div>
+<p>The simplest titratable system consists of an acid and a conjugate base (or a
+base and a conjugate acid).</p>
+<div class="math notranslate nohighlight">
+\[\ce{HA + H2O &lt;=&gt; H3O+ + A-}\]</div>
+<p>To monitor this equilibrium using NMR, we need a peak in the NMR spectrum of
+the acid (A). The acid may have many spins we could monitor–e.g. methyl,
+methylene or methine <sup>1</sup>H spins–and the objective is to find a peak for
+a functional group that is near the titratable group, and one with good signal
+and in an non-congested region of the spectrum. For example, the methyl
+<sup>1</sup>H spins spins in acetate could be used to titrate and measure the pKa
+of the carboxylic group.</p>
+<p>The peak we choose to monitor will have a chemical shift for the acid form
+(<span class="math notranslate nohighlight">\(\delta_{HA}\)</span>) and a chemical shift for the conjugate base form
+(<span class="math notranslate nohighlight">\(\delta_{A}\)</span>). The signal we measure is in fast exchange–i.e. the
+kinetics of the above chemical reaction are much faster than the evolution of
+the signal–and we measure an average chemical shift (<span class="math notranslate nohighlight">\(\delta_{ave}\)</span>)
+between the two forms.</p>
+<div class="math notranslate nohighlight">
+\[\delta_{ave} = \chi_{HA} \delta_{HA} + (1 - \chi_{HA}) \delta_{A}\]</div>
+<p>Here we have introduced <span class="math notranslate nohighlight">\(\chi_{HA}\)</span>, the mole fraction of HA. When the
+pH is much lower than the pKa of the reaction, nearly 100% of our acid is in
+the <span class="math notranslate nohighlight">\(\ce{HA}\)</span> form—i.e. <span class="math notranslate nohighlight">\(\chi_{HA} = 1.0\)</span>. Conversely, when the
+pH is much higher than the pKa of the reaction, nearly 100% of our acid is in
+the conjugate base <span class="math notranslate nohighlight">\(\ce{A-}\)</span> form—i.e. <span class="math notranslate nohighlight">\(\chi_A = 1.0\)</span>—and nearly
+0% is in the HA form—i.e. <span class="math notranslate nohighlight">\(\chi_{HA} = 0.0\)</span>.</p>
+<p>The pKa corresponds to the pH of the solution when the acid (HA) and conjugate
+base (A) form have equal concentrations: <span class="math notranslate nohighlight">\(\chi_{HA} = \chi_{A} = 0.5\)</span>.
+This can be sean from the Henderson–Hasselbalch equation.</p>
+<div class="math notranslate nohighlight">
+\[pH = pKa + \log\frac{[A]}{[HA]}\]</div>
+<p>When [A] = [HA], then <span class="math notranslate nohighlight">\(\log\frac{[A]}{[HA]} = \log 1.0 = 0.0\)</span>.</p>
+<p>However, we’d like to be able to relate the pH from the Henderson–Hasselbalch
+equation to the chemical shift of HA and A. First, we need to recognize that
+the initial or total amount and concentration of ‘A’, <span class="math notranslate nohighlight">\([A]_{0}\)</span>, is
+constant.</p>
+<div class="math notranslate nohighlight">
+\[[A]_0 = [A] + [HA]\]</div>
+<p>Regardless of the pH and the distribution of [A] and [HA], the original amount
+we put in our sample, <span class="math notranslate nohighlight">\([A]_0\)</span>, does not change. Additionally, the
+concentrations [A] and [HA] can be evaluated from the mole-fractions.</p>
+<div class="math notranslate nohighlight">
+\[[HA] = \chi_{HA} [A]_0\]</div>
+<div class="math notranslate nohighlight">
+\[[A] = \chi_{A} [A]_0 = (1 - \chi_{HA}) [A]_0\]</div>
+<p>Combining the above equation with the Henderson-Hasselbalch equation produces
+a new equation with mole-fractions.</p>
+<div class="math notranslate nohighlight">
+\[pH = pKa + \log\frac{1 - \chi_{HA}}{\chi_{HA}}\]</div>
+<p>In a couple of steps, the equation can be rearranged as a function of
+mole fraction.</p>
+<div class="math notranslate nohighlight">
+\[10^{pH - pKa} = \frac{1 - \chi_{HA}}{\chi_{HA}} = \chi_{HA}^{-1} - 1\]</div>
+<div class="math notranslate nohighlight">
+\[\chi_{HA} = \frac{1}{10^{pH - pKa} + 1}\]</div>
+<p>And combined with the average chemical shift.</p>
+<div class="math notranslate nohighlight">
+\[\delta_{ave} = \delta_{HA} \left( \frac{1}{10^{pH - pKa} + 1} \right) +
+\delta_{A} \left(1 - \frac{1}{10^{pH - pKa} + 1}\right)\]</div>
+<div class="note admonition">
+<p class="admonition-title">Example: Acetate mole fractions and chemical shifts</p>
+<p>The following table shows example mole fractions and chemical shifts
+for 10.0 mM acetate in a solvent at different pHs. In this solvent,
+the acetate pKa is 4.60, the
+<span class="math notranslate nohighlight">\(\delta_{HA}\)</span> chemical shift is 2.100 ppm, and the <span class="math notranslate nohighlight">\(\delta_{A}\)</span>
+chemical shift is 1.900 ppm for the methyl <sup>1</sup>H spins of acetate.</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>pH</p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(\chi_{HA}\)</span></p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(\chi_{A}\)</span></p></th>
+<th class="head"><p>[HA]</p></th>
+<th class="head"><p>[A]</p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(\delta_{ave}\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>6.0</p></td>
+<td><p>0.038</p></td>
+<td><p>0.962</p></td>
+<td><p>0.4 mM</p></td>
+<td><p>9.6 mM</p></td>
+<td><p>1.908 ppm</p></td>
+</tr>
+<tr class="row-odd"><td><p>5.5</p></td>
+<td><p>0.112</p></td>
+<td><p>0.888</p></td>
+<td><p>1.1 mM</p></td>
+<td><p>8.9 mM</p></td>
+<td><p>1.922 ppm</p></td>
+</tr>
+<tr class="row-even"><td><p>5.0</p></td>
+<td><p>0.285</p></td>
+<td><p>0.715</p></td>
+<td><p>2.8 mM</p></td>
+<td><p>7.2 mM</p></td>
+<td><p>1.957 ppm</p></td>
+</tr>
+<tr class="row-odd"><td><p>4.5</p></td>
+<td><p>0.557</p></td>
+<td><p>0.443</p></td>
+<td><p>5.6 mM</p></td>
+<td><p>4.4 mM</p></td>
+<td><p>2.011 ppm</p></td>
+</tr>
+<tr class="row-even"><td><p>4.0</p></td>
+<td><p>0.800</p></td>
+<td><p>0.200</p></td>
+<td><p>8.0 mM</p></td>
+<td><p>2.0 mM</p></td>
+<td><p>2.060 ppm</p></td>
+</tr>
+<tr class="row-odd"><td><p>3.5</p></td>
+<td><p>0.926</p></td>
+<td><p>0.074</p></td>
+<td><p>9.3 mM</p></td>
+<td><p>0.7 mM</p></td>
+<td><p>2.085 ppm</p></td>
+</tr>
+<tr class="row-even"><td><p>3.0</p></td>
+<td><p>0.976</p></td>
+<td><p>0.024</p></td>
+<td><p>9.8 mM</p></td>
+<td><p>0.2 mM</p></td>
+<td><p>2.095 ppm</p></td>
+</tr>
+</tbody>
+</table>
+<p>For each pH, verify the calculations for <span class="math notranslate nohighlight">\(\chi_{HA}\)</span>,
+<span class="math notranslate nohighlight">\(\chi_{A}\)</span>, [A], [HA], [A]<sub>0</sub>, and <span class="math notranslate nohighlight">\(\delta_{ave}\)</span>.</p>
+<figure class="align-default">
+<img alt="../../_images/index-11.png" class="plot-directive" src="../../_images/index-11.png" />
+</figure>
+</div>
+</section>
+<section id="nmr-experiments">
+<h3>NMR Experiments<a class="headerlink" href="#nmr-experiments" title="Link to this heading">#</a></h3>
+<p>NMR spectrometers are equipped with hundreds to thousands of 1-dimensional or
+multi-dimensional experiments. These experiments are known as pulse sequences.
+Pulse sequences comprise sequences of timed radio-frequency (RF) pulses to
+manipulate the NMR signal (coherences) in one or more dimensions. We will be
+using a few different pulse sequences on our samples.</p>
+<section id="h-1-dimensional-spectrum-with-h2o-suppression">
+<h4><sup>1</sup>H 1-dimensional spectrum with H<sub>2</sub>O suppression<a class="headerlink" href="#h-1-dimensional-spectrum-with-h2o-suppression" title="Link to this heading">#</a></h4>
+<p>In the simplest NMR experiment, the spins are stimulated by RF
+radiation–known as a pulse. Water suppression involves the spectroscopic
+filtering to suppress the signal of <sup>1</sup>H<sub>2</sub>O. In a typical NMR sample, the analyte
+has a concentration in the uM to mM range. When disolved in water as a solvent,
+the signal of <sup>1</sup>H<sub>2</sub>O has a concentration up to 110M–typically 100,000
+times greater than our analyte. Since the <sup>1</sup>H<sub>2</sub>O signal arises as a single peak,
+we can implement pulses to either avoid exciting <sup>1</sup>H<sub>2</sub>O or to suppress its
+signal. The suppression is rarely perfect, and small distortions may arise
+in the final spectrum around the water peak at 4.7 ppm.</p>
+</section>
+<section id="h-1h-2-dimensional-correlation-spectroscopy-cosy">
+<h4><sup>1</sup>H-<sup>1</sup>H 2-dimensional COrrelation SpectroscopY (COSY)<a class="headerlink" href="#h-1h-2-dimensional-correlation-spectroscopy-cosy" title="Link to this heading">#</a></h4>
+<p>A 2-dimensional NMR experiment correlates the peaks and chemical shifts of
+spins with other, related spins. In the <sup>1</sup>H-<sup>1</sup>H COSY, the signal
+(coherence) of one <sup>1</sup>H spin is transferred to and measured on another
+spin through the <sup>1</sup>H-<sup>1</sup>H J-coupling <a class="reference internal" href="#cosy1976" id="id2"><span>[COSY1976]</span></a>. When two sets of
+<sup>1</sup>H spins have a sufficiently large J<sub>HH</sub>-coupling—typically
+on the order of a few Hz to 10s of Hz for <sup>1</sup>H-<sup>1</sup>H J-couplings–
+they produce a <em>crosspeak</em>. In contrast to <em>diagonal peaks</em>, which show up on
+the 1:1 line on the 2-dimensional spectrum, <em>crosspeaks</em> appear elsewhere in
+the spectrum. Their location gives the chemical shifts of the two set of
+correlated <sup>1</sup>H spins and their integral contains information on the
+magnitude of the J-coupling.</p>
+<p>A 2-dimensional (or higher dimensional) experiment has many advantages. The
+first advantage is that many peaks overlapping in a 1-dimensional spectrum
+—known as congestion–are spread out and can be more easily isolated and
+identified in a higher dimensional spectrum. Another important advantage is that
+different measurements or values can be encoded in the spectrum. For example,
+the intensity of peaks in a <sup>1</sup>H-<sup>1</sup>H NOESY 2D contains information
+on the distance between hydrogen atoms whereas the intensity of peaks in a
+<sup>1</sup>H-<sup>1</sup>H COSY 2D contains information on the connectivity of
+<sup>1</sup>H spins in the bonding topology of a molecule.</p>
+<p>We will use a <sup>1</sup>H-<sup>1</sup>H COSY 2D spectrum to identify the
+hydrogens that are within 2-3 bonds of other hydrogens. We can then use
+a “peak walking” procedure to follow the hydrogens down a sequence of heavy
+atoms (C, N or O) with hydrogens within a molecule.</p>
+<div class="note admonition">
+<p class="admonition-title">Example: Ethanol <sup>1</sup>H-<sup>1</sup>H COSY 2D</p>
+<p>The following shows the contour plot of a simulated 2-dimensional COSY
+spectrum for ethanol. Ethanol’s <sup>1</sup>H spectrum has a methylene peak
+(<span class="math notranslate nohighlight">\(\delta_H\)</span> = 3.69 ppm) and methyl peak (<span class="math notranslate nohighlight">\(\delta_H\)</span> = 1.22 ppm).
+The <sup>1</sup>H-<sup>1</sup>H COSY 2D spectrum includes two diagonal
+peaks and two crosspeaks. The crosspeaks between the methyl (CH3) and
+methylene (CH2) groups arise because the <sup>3</sup>J<sub>HH</sub>-coupling
+is about 5 Hz.</p>
+<p>The hydroxyl hydrogen is not shown and it is often not visible in aqueous
+solvent due to hydrogen exchange—i.e. rapid exchange with the hydrogens
+of the solvent. The splittings from homonuclear J-coupling were suppressed
+in the simulated spectrum.</p>
+<figure class="align-default">
+<img alt="../../_images/cosy2d_ethanol.png" class="plot-directive" src="../../_images/cosy2d_ethanol.png" />
+</figure>
+</div>
+</section>
+<section id="h-x-1-dimensional-dept">
+<h4><sup>1</sup>H-X 1-dimensional DEPT<a class="headerlink" href="#h-x-1-dimensional-dept" title="Link to this heading">#</a></h4>
+<p>The Distortionless Enhancement Polarization Transfer (DEPT) pulse sequence
+transfers signal (coherences) from <sup>1</sup>H to a magnetically-active heavy atom
+like <sup>13</sup>C or <sup>15</sup>N <a class="reference internal" href="#dept1982" id="id3"><span>[DEPT1982]</span></a>. The transfer is possible when there is an appreciable
+J-coupling between the <sup>1</sup>H spin and the <sup>13</sup>C or <sup>15</sup>N spin, which occurs
+when the two are directly bonded. For example, the
+<sup>1</sup>J<sub>HC</sub>-coupling for a <sup>1</sup>H-<sup>13</sup>C bond is about 140 Hz,
+while the <sup>1</sup>J<sub>HN</sub>-coupling for a <sup>1</sup>H-<sup>15</sup>N bond is about
+-93 Hz.</p>
+<p>The DEPT sequence, and the related INEPT sequence <a class="reference internal" href="#inept1979" id="id4"><span>[INEPT1979]</span></a>, can enhance
+the signal intensity of low-gamma nuclei—that is, nuclei with gyromagnetic
+ratios much smaller than <sup>1</sup>H. Additionally, the pulse sequence can be run
+with different pulses to encode multiplicity information in the
+intensities of peaks:</p>
+<ol class="arabic simple">
+<li><p>The <sup>13</sup>C DEPT-45 experiment shows <sup>13</sup>C peaks with positive intensity
+for methine (<span class="math notranslate nohighlight">\(\ce{CH}\)</span>), methylene (<span class="math notranslate nohighlight">\(\ce{CH2}\)</span>) and methyl
+groups (<span class="math notranslate nohighlight">\(\ce{CH3}\)</span>) groups.</p></li>
+<li><p>The <sup>13</sup>C DEPT-90 experiment shows <sup>13</sup>C peaks with positive intensity
+for methine (<span class="math notranslate nohighlight">\(\ce{CH}\)</span>) groups.</p></li>
+<li><p>The <sup>13</sup>C DEPT-135 experiment shows <sup>13</sup>C peaks with positive intensity for
+methine (<span class="math notranslate nohighlight">\(\ce{CH}\)</span>) and methyl (<span class="math notranslate nohighlight">\(\ce{CH3}\)</span>) groups and peaks
+with negative intensity for methylene (<span class="math notranslate nohighlight">\(\ce{CH2}\)</span>) groups.</p></li>
+</ol>
+</section>
+<section id="h-x-2-dimensional-hetcor">
+<h4><sup>1</sup>H-X 2-dimensional HETCOR<a class="headerlink" href="#h-x-2-dimensional-hetcor" title="Link to this heading">#</a></h4>
+<p>The HETeronuclear CORrelation (HETCOR) 2-dimensional experiment correlates
+the chemical shift of <sup>1</sup>H spins with the chemical shift of the bonded <sup>13</sup>C, <sup>15</sup>N
+(or other low-gamma ‘X’) spin. As with other multidimensional NMR experiments,
+HETCOR decreases congestion of peaks from a 1-dimensional spectrum. It
+additionally can be used to correlate the peaks from a <sup>1</sup>H 1-dimensional
+spectrum to the peaks of a X-spin 1-dimensional spectrum.</p>
+<p>There are a variety of 2-dimensional heteronuclear experiments, including the
+HSQC and HMQC. HETCOR is different from these as the final signal is measured
+from the low-gamma spin instead of the <sup>1</sup>H spin, thereby significantly reducing
+the signal-to-noise ratio of the spectrum. HETCOR nevertheless offers some
+advantages that could be useful:</p>
+<ol class="arabic simple">
+<li><p>Molecules without the X-spin, whether it be <sup>13</sup>C, <sup>15</sup>N or another spin,
+are not visible in the final spectrum. For samples in <sup>1</sup>H<sub>2</sub>O, this
+effectively suppresses the strong signal from the solvent.</p></li>
+<li><p>Some molecules, like Intrinsically Disorder Proteins (IDP), have very narrow
+<sup>13</sup>C or <sup>15</sup>N peaks spread over a large frequency range. Collecting the
+full resolution spectra of these samples can take a long time, and a HETCOR
+can be more time efficient if there is sufficient sample to produce a
+good signal.</p></li>
+<li><p>Peaks for <sup>1</sup>H spins that hydrogen exchange may more appear more easily in a
+HETCOR</p></li>
+</ol>
+</section>
+</section>
+</section>
+<section id="procedures">
+<h2>Procedures<a class="headerlink" href="#procedures" title="Link to this heading">#</a></h2>
+<section id="materials">
+<h3>Materials<a class="headerlink" href="#materials" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Two glass pipets, each with a bulb</p></li>
+<li><p>10-mL centrifuge/Falcon tube</p></li>
+<li><p>25-mL Erlenmeyer flask</p></li>
+<li><p>7-10 clean NMR tubes with caps</p></li>
+<li><p>Small magnetic stirbar (0.5-1.0 cm)</p></li>
+<li><p>Magnetic stir plate</p></li>
+<li><p>pH meter</p></li>
+<li><p><sup>2</sup>H<sub>2</sub>O (D<sub>2</sub>O)</p></li>
+<li><p>Unknown sample</p></li>
+</ul>
+</section>
+<section id="a-ph-meter-calibration">
+<h3>A. pH meter calibration<a class="headerlink" href="#a-ph-meter-calibration" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Thoroughly rinse the pH meter probe with ddH<sub>2</sub>O.</p></li>
+<li><p>Place the probe in a calibration solution (pH 4.0, 7.0 or 10.0).</p></li>
+<li><p>If the pH meter read-out is different from the calibration solution’s
+indicated pH by more than 0.03 units, recalibrate the pH meter with the TA.</p></li>
+</ol>
+<div class="warning admonition">
+<p class="admonition-title">Store the probe in a saturated KCl solution when not in use</p>
+<p>Do not leave the probe outside of a solution for longer than a
+minute. The KCl solution must be rinsed from the tip before inserting the
+probe in your solution to avoid contaminating your solution with KCl.</p>
+</div>
+<div class="warning admonition">
+<p class="admonition-title">The pH probe is fragile</p>
+<p>The pH probe glass surface is fragile and prone to scratching and damage.
+Carefully wipe the pH probe tip with lintless and staticless wipes (e.g.
+Kimwipes)</p>
+</div>
+</section>
+<section id="b-1-0m-hcl-solution-10-ml">
+<h3>B. 1.0M HCl solution, 10-mL<a class="headerlink" href="#b-1-0m-hcl-solution-10-ml" title="Link to this heading">#</a></h3>
+<div class="danger admonition">
+<p class="admonition-title">Work in a fumehood and use lab goggles and gloves!</p>
+<p>HCl is a concentrated acid, and it can cause serious tissue damage to
+skin and to your eyes</p>
+</div>
+<ol class="arabic simple">
+<li><p>Add 5.0 mL ddH<sub>2</sub>O to a 10-mL centrifuge (Falcon) tube. The exact
+concentration of this solution does not need to be known, and the
+volumetric gradations on the tube can be used to estimate this volume.</p></li>
+<li><p>Add about 0.5 mL of concentrated HCl (37%, ~10M) to the 10-mL centrifuge
+tube. Do not use a micropipet because the HCl vapor may damage the pipet
+internals. Instead add about 1/2 the volume of a glass pipet, which is
+labeled the “titration” pipet.</p></li>
+<li><p>Mix the solution in the 10-mL centrifuge tube with the titration glass
+pipet by sucking the solution in-and-out of the pipet. At this stage,
+do not screw the cap on the centrifuge tube and invert the solution–this
+would create a closed system, and the heat released from mixing the HCl
+and H<sub>2</sub>O could vaporize the solution and cause a small explosion.</p></li>
+</ol>
+</section>
+<section id="c-unknown-in-100mm-phopshate-buffer-10-d2o-10-0-ml">
+<h3>C. Unknown in 100mM phopshate buffer, 10% D<sub>2</sub>O, 10.0-mL<a class="headerlink" href="#c-unknown-in-100mm-phopshate-buffer-10-d2o-10-0-ml" title="Link to this heading">#</a></h3>
+<ol class="arabic">
+<li><div class="line-block">
+<div class="line">Add 141 mg disodium hydrogen phosphate (<span class="math notranslate nohighlight">\(\ce{Na2HPO4}\)</span>)
+to a 25-mL Erlenmeyer flask.</div>
+<div class="line">FW: 141.96</div>
+</div>
+</li>
+<li><p>Add 8.5 mL of H<sub>2</sub>O and 1.0 mL <sup>2</sup>H<sub>2</sub>O (D<sub>2</sub>O)</p></li>
+<li><p>Mix 500 uL of the unknown to reach a final volume of 10.0 mL.</p></li>
+<li><p>Rinse a small magnetic stirbar with ddH<sub>2</sub>O and add to the solution</p></li>
+<li><p>Place the Erlenmeyer with the solution on a magnetic stirplate that is
+switched off, and slowly increase the rotation rate of the magnetic stirrer.</p></li>
+<li><p>Measure and note the initial pH. Be careful that the pH probe does not
+make contact with the magnetic stirrer or the walls of the Erlenmeyer flask.</p></li>
+<li><p>Label the a new glass pipet with “sampling” and remove an aliquot of about
+500 ul in a NMR tube and label the tube with the description
+of the sample, including the current pH.</p></li>
+</ol>
+<div class="warning admonition">
+<p class="admonition-title">Label your samples</p>
+<p>Label your samples, and make sure the labels are readable and have complete
+information. Losing track of your samples is the easiest and most avoidable
+way to invalidate an experiment, and it could pose a safety or environmental
+issue when the sample needs to be disposed.</p>
+</div>
+</section>
+<section id="d-titration-of-the-solution-with-the-unknown">
+<h3>D. Titration of the solution with the unknown<a class="headerlink" href="#d-titration-of-the-solution-with-the-unknown" title="Link to this heading">#</a></h3>
+<p>At this stage, you should have the pH meter probe in your unknown solution,
+which is mixing continuously with a magnetic stirrer.</p>
+<ol class="arabic simple">
+<li><p>Using the “titration” glass pipet, add one or more drops of the 1.0 M HCl
+solution. The drops should fall directly into the solution, and they should
+not make contact with the pH meter probe or the Erlenmeyer flask walls.</p></li>
+<li><p>Continue to add drops of 1.0M HCl until the pH has decreased by about 0.5
+units.</p></li>
+<li><p>Collect a 500 ul aliquot in an NMR tube and label the tube</p></li>
+<li><p>Continue to slowly acidify the solution and remove a 500 ul aliquot for
+every ~0.5 pH unit drop. Continue this process until the final aliquot at
+pH 3.5 has been collected.</p></li>
+</ol>
+</section>
+<section id="e-collection-of-nmr-spectra">
+<h3>E. Collection of NMR spectra<a class="headerlink" href="#e-collection-of-nmr-spectra" title="Link to this heading">#</a></h3>
+<p>Collect the following spectra with the help of the NMR TA:</p>
+<ol class="arabic simple">
+<li><p>For <strong>all</strong> of your pH samples, collect a <sup>1</sup>H 1D experiment</p></li>
+<li><p>For <strong>one</strong> of your pH samples, collect a <sup>1</sup>H-<sup>1</sup>H 2D COSY, <sup>13</sup>C DEPT-45,
+DEPT-90, DEPT-135 and a <sup>13</sup>C-HETCOR</p></li>
+</ol>
+</section>
+</section>
+<section id="results-and-discussion">
+<h2>Results and Discussion<a class="headerlink" href="#results-and-discussion" title="Link to this heading">#</a></h2>
+<section id="error-analysis">
+<h3>Error Analysis<a class="headerlink" href="#error-analysis" title="Link to this heading">#</a></h3>
+<p>The error in the pH measurement can be estimated from the pH meter reading of
+the standard solutions.</p>
+<p>The error in the chemical shift can be estimated using a peak or a group of
+peaks full-width at half-height (FWHH) and the peak’s signal-to-noise ration
+(SNR):</p>
+<div class="math notranslate nohighlight">
+\[\sigma_\delta = \frac{FWHH}{2 \cdot SNR}\]</div>
+<p>The peak integral’s error can be estimated by integrating over a similar range
+in the noise region of the spectrum.</p>
+</section>
+<section id="structural-analysis">
+<h3>Structural Analysis<a class="headerlink" href="#structural-analysis" title="Link to this heading">#</a></h3>
+<p>Identify and draw the molecule for the unknown. In the molecule, include
+the assignment of different spins, as they related to the assignments in the
+tables (see <a class="reference internal" href="#achievements">Achievements</a>).</p>
+<div class="note admonition">
+<p class="admonition-title">Example Molecule Assignment</p>
+<p>The following is an example molecular diagram for ethanol and the first
+chemical shift table.</p>
+<a class="reference internal image-reference" href="../../_images/ethanol.png"><img alt="../../_images/ethanol.png" src="../../_images/ethanol.png" style="width: 240px;" /></a>
+<table class="table" id="id5">
+<caption><span class="caption-number">Table 1 </span><span class="caption-text">NMR <sup>1</sup>H chemical shift assignments for 1mM ethanol in water (500-MHz)</span><a class="headerlink" href="#id5" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Assignment</p></th>
+<th class="head"><p>Chemical Shift</p></th>
+<th class="head"><p>Integral</p></th>
+<th class="head"><p>Multiplicity</p></th>
+<th class="head"><p>J-coupling</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>H<sub>a</sub></p></td>
+<td><p>1.20 ± 0.02 ppm</p></td>
+<td><p>3.02 ± 0.02</p></td>
+<td><p>triplet</p></td>
+<td><p>5 ± 1 Hz</p></td>
+</tr>
+<tr class="row-odd"><td><p>H<sub>b</sub></p></td>
+<td><p>2.43 ± 0.02 ppm</p></td>
+<td><p>1.99 ± 0.02</p></td>
+<td><p>doublet</p></td>
+<td><p>5 ± 1 Hz</p></td>
+</tr>
+<tr class="row-even"><td><p>H<sub>c</sub></p></td>
+<td><p>Not observed</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="note admonition">
+<p class="admonition-title">List of possible unknowns</p>
+<table class="table">
+<tbody>
+<tr class="row-odd"><td><p>2-methylpyridine</p></td>
+<td><p>3-methylpyridine</p></td>
+<td><p>4-methylpyridine</p></td>
+</tr>
+<tr class="row-even"><td><p>2-ethylpyridine</p></td>
+<td><p>3-ethylpyridine</p></td>
+<td><p>4-ethylpyridine</p></td>
+</tr>
+<tr class="row-odd"><td><p>2,3-dimethylpyridine</p></td>
+<td><p>2,4-dimethylpyridine</p></td>
+<td><p>2,5-dimethylpyridine</p></td>
+</tr>
+<tr class="row-even"><td><p>2,6-dimethylpyridine</p></td>
+<td><p>3,4-dimethylpyridine</p></td>
+<td><p>3,5-dimethylpyridine</p></td>
+</tr>
+<tr class="row-odd"><td><p>2-ethyl-3-methylpyridine</p></td>
+<td><p>2-ethyl-4-methylpyridine</p></td>
+<td><p>2-ethyl-5-methylpyridine</p></td>
+</tr>
+<tr class="row-even"><td><p>2-ethyl-6-methylpyridine</p></td>
+<td><p>3-ethyl-2-methylpyridine</p></td>
+<td><p>3-ethyl-4-methylpyridine</p></td>
+</tr>
+<tr class="row-odd"><td><p>3-ethyl-5-methylpyridine</p></td>
+<td><p>4-ethyl-2-methylpyridine</p></td>
+<td><p>4-ethyl-3-methylpyridine</p></td>
+</tr>
+<tr class="row-even"><td><p>5-ethyl-2-methylpyridine</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="calculations">
+<h3>Calculations<a class="headerlink" href="#calculations" title="Link to this heading">#</a></h3>
+<section id="pka-non-linear-regression">
+<h4>pKa Non-Linear Regression<a class="headerlink" href="#pka-non-linear-regression" title="Link to this heading">#</a></h4>
+<p>The chemical shift pH titration equation is the following:</p>
+<div class="math notranslate nohighlight">
+\[\delta_{ave} = \delta_{HA} \left( \frac{1}{10^{pH - pKa} + 1} \right) +
+\delta_{A} \left(1 - \frac{1}{10^{pH - pKa} + 1}\right)\]</div>
+<p>Alternatively, the function can be re-arranged for the non-linear regression</p>
+<div class="math notranslate nohighlight">
+\[\delta_{ave} = \delta_{A} + \frac{\delta_{HA} - \delta_{A}}{10^{pH - pKa} + 1}\]</div>
+<p>Save the pH values (x-values), the chemical shifts (y-values) and the
+corresponding chemical shift errors (y errors) as a csv file. Load the csv
+file in your plotting program and conduct a non-linear regression with 3
+parameters: <span class="math notranslate nohighlight">\(\delta_A\)</span>, <span class="math notranslate nohighlight">\(\delta_{HA}\)</span> and pKa. Different variable
+names (x, y) and parameter names (a, b, c) may need to be used in the input
+for the non-linear regression.</p>
+<div class="math notranslate nohighlight">
+\[y = a + \frac{b - a}{10^{x - c} + 1}\]</div>
+<p>Include the final plot, the fit parameters and their uncertainties as well as
+the <span class="math notranslate nohighlight">\(\chi^2\)</span> and <span class="math notranslate nohighlight">\(\chi^2_{reduced}\)</span> of the fits.</p>
+</section>
+</section>
+<section id="questions">
+<h3>Questions<a class="headerlink" href="#questions" title="Link to this heading">#</a></h3>
+<p>In your resport, answer the <strong>4</strong> questions assigned to your rotation. You will
+only receive points if your answer includes all calculations and explanations
+in paragraphs.</p>
+<ol class="arabic">
+<li><p>Phosphate has 3 pKas in water at room temperature: 2.2, 7.2, 12.4.
+What is the pI of phosphate? The pI is the pH when the charge of all
+phosphate species adds to zero. (Show you work with equations)</p></li>
+<li><p>Phosphate has 3 pKas in water at room temperature: 2.2, 7.2, 12.4.
+What mass of monosodium dihydrogen phosphate (<span class="math notranslate nohighlight">\(\ce{NaH2PO4}\)</span>)
+and what mass of disodium hydrogen phosphate (<span class="math notranslate nohighlight">\(\ce{Na2HPO4}\)</span>)
+would need to be added to 100.0 mL of water to make a 100 mM phosphate
+buffer solution at pH 7.0? (Show your calculations)</p></li>
+<li><p>An acid with a pKa of 5.20 has a total concentration of 15.0 mM and a pH
+of 5.75 in water. What is the mole fraction and concentration of the acid
+(HA) and its conjugate base (A)?</p></li>
+<li><p>A student accidentally drops 50 ul of 1.0M HCl in a 10-ml solution. Calculate
+the final pH if the solution is (A) water at pH 7.00,
+(B) 10 mM Tris at pH 7.00 and (C) 10 mM Tris at pH 8.00. Use a
+pKa of 8.10 for Tris.</p></li>
+<li><p>At what concentration of [H<sub>3</sub>O<sup>+</sup>] in water will an acid (HA) have twice
+the concentration of its congugate base ([A<sup>-</sup>])? (pKa = 6.0)</p></li>
+<li><p>The pKa of acetate is about 4.5 in water and it’s above 7.0 in DMSO. Why?</p></li>
+<li><p>A Tris buffer with a pH of 7.7 at 298K has a pH of about 8.3 at 278K. Why?</p></li>
+<li><p>A protein (P) has two ionizable aspartic acids, and they both have pKas of 4.5.
+Derive a modified Henderson–Hasselbalch equation for this system.</p>
+<div class="math notranslate nohighlight">
+\[\ce{P-H2 + 2 H2O &lt;=&gt; P^{2-} + 2H3O+}\]</div>
+</li>
+<li><p>What does it mean for an acid to have a negative pKa?</p></li>
+<li><p>A compound has a pKa of 5.0, an acid chemical shift of 3.2 ppm and a base
+chemical shift of 2.8 ppm. At what pH or pH range is the change in chemical
+shift the largest for a given volume of added 1M HCl acid?</p></li>
+<li><p>A compound has a pKa of 5.0, an acid chemical shift of 3.2 ppm and a base
+chemical shift of 2.8 ppm. At what pH or pH range is the change in pH the
+largest for a given volume of added 1M HCl acid?</p></li>
+<li><p>A J-coupling can be measured between the <sup>13</sup>C and a <sup>15</sup>N nuclei, J<sub>NC</sub>,
+in a C=O..H-N hydrogen bond. What does this tell you about the nature
+of the hydrogen bond?</p></li>
+<li><p>The methylene <sup>1</sup>H spin chemical shift of 3.69 ppm for ethanol
+(<span class="math notranslate nohighlight">\(\ce{CH3CH2OH}\)</span>) is higher than 2.55 ppm for ethanethiol
+(<span class="math notranslate nohighlight">\(\ce{CH3CH2SH}\)</span>). Why?</p></li>
+<li></li>
+<li><p>A spin-1/2 particle aligns parallel or anti-parallel in a magnetic field (B0)
+such that the z-component of its angular momentum, Iz, is either
+<span class="math notranslate nohighlight">\(\hbar / 2\)</span> or <span class="math notranslate nohighlight">\(- \hbar / 2\)</span>. Given that the length of the
+angular momentum is <span class="math notranslate nohighlight">\(\lvert I \rvert = \sqrt{\frac{3}{4}} \hbar\)</span>,
+what are the polar angles <span class="math notranslate nohighlight">\(\theta\)</span> of the angular momentum with respect
+to the applied magnetic field? (Show your calculations)</p></li>
+<li><p>Use the Boltzmann thermal distribution of a 2 energy level system to explain
+why NMR is significantly less sensitive as a technique than UV-Vis
+spectroscopy. (i.e. it requires a lot more sample to produce a spectrum)</p>
+<div class="math notranslate nohighlight">
+\[\frac{p_1}{p_2} = e^{-(E_1 - E_2) / kT}\]</div>
+</li>
+</ol>
+</section>
+</section>
+<section id="grading-rubric">
+<h2>Grading Rubric<a class="headerlink" href="#grading-rubric" title="Link to this heading">#</a></h2>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Points</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>60</p></td>
+<td><p>Short lab report writeup</p></td>
+</tr>
+<tr class="row-odd"><td><p>20</p></td>
+<td><p>Achievements</p></td>
+</tr>
+<tr class="row-even"><td><p>20</p></td>
+<td><p>Answers to questions</p></td>
+</tr>
+</tbody>
+</table>
+<section id="achievements">
+<h3>Achievements<a class="headerlink" href="#achievements" title="Link to this heading">#</a></h3>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Points</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>Collected a full sigmoidal curve with a s-shape and at least 7 points</p></td>
+</tr>
+<tr class="row-odd"><td><p>5</p></td>
+<td><p>Correctly identified the unknown molecule</p></td>
+</tr>
+<tr class="row-even"><td><p>2</p></td>
+<td><p>Complete table with <sup>1</sup>H chemical shifts from <sup>1</sup>H 1D experiment.
+The table should include (1) chemical shift, (2) peak integration,
+(3) multiplicity, (4) J-coupling values (if these can be measured),
+and (5) the assignment.</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>Complete table with <sup>13</sup>C chemical shifts from DEPT experiment.
+The table should include (1) the type of DEPT pulse sequence,
+(2) chemical shift, (3) peak integration, (4) multiplicity,
+(5) J-coupling values (if these can be measured),
+(6) the peak sign (positive or negative), (7) the assignment.</p></td>
+</tr>
+<tr class="row-even"><td><p>2</p></td>
+<td><p>Complete table with <sup>1</sup>H chemical shifts from the <sup>1</sup>H COSY experiment.
+Each row should correspond to one cross-peak or diagonal peak.
+The table should include (1) the type of peak, (2) the assignment.</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>Complete table with <sup>1</sup>H/<sup>13</sup>C chemical shifts from the <sup>13</sup>C-HETCOR
+experiment.
+Each row should correspond to one cross-peak or diagonal peak.
+The table should include (1) the type of peak, (2) the assignment.</p></td>
+</tr>
+<tr class="row-even"><td><p>2</p></td>
+<td><p>Complete table with sample pH values and <sup>1</sup>H chemical shifts for the
+unknown
+The table should include the (1) pH value with estimated error, (2)
+the chemical shift (in ppm) with estimated error, (3) the assignments
+for the peaks.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="penalties">
+<h3>Penalties<a class="headerlink" href="#penalties" title="Link to this heading">#</a></h3>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Points</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>-5</p></td>
+<td><p>Copying questions verbatim in the lab report. Do not copy the question
+in your lab report–only write the question number and the answer.</p></td>
+</tr>
+<tr class="row-odd"><td><p>-5 to -20</p></td>
+<td><p>Insufficient participation or help with the lab partner</p></td>
+</tr>
+<tr class="row-even"><td><p>-25</p></td>
+<td><p>Lab report submitted late (up to 7 days)</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="references">
+<h2>References<a class="headerlink" href="#references" title="Link to this heading">#</a></h2>
+<div role="list" class="citation-list">
+<div class="citation" id="biochem1981" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">Biochem1981</a><span class="fn-bracket">]</span></span>
+<p>Roberts, Justin K. M., Norma Wade-Jardetzky, and Oleg Jardetsky. “Intracellular PH Measurements by Phosphorus-31 Nuclear Magnetic Resonance. Influence of Factors Other than PH on Phosphorus-31 Chemical Shifts.” Biochemistry 20, no. 19 (September 15, 1981): 5389–94. <a class="reference external" href="https://doi.org/10.1021/bi00522a006">https://doi.org/10.1021/bi00522a006</a>.</p>
+</div>
+<div class="citation" id="cosy1976" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">COSY1976</a><span class="fn-bracket">]</span></span>
+<p>Aue, W. P., E. Bartholdi, and R. R. Ernst. “Two‐dimensional Spectroscopy. Application to Nuclear Magnetic Resonance.” The Journal of Chemical Physics 64, no. 5 (August 28, 2008): 2229–46. <a class="reference external" href="https://doi.org/10.1063/1.432450">https://doi.org/10.1063/1.432450</a>.</p>
+</div>
+<div class="citation" id="inept1979" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id4">INEPT1979</a><span class="fn-bracket">]</span></span>
+<p>Morris, Gareth A., and Ray Freeman. “Enhancement of Nuclear Magnetic Resonance Signals by Polarization Transfer.” Journal of the American Chemical Society 101, no. 3 (January 1, 1979): 760–62. <a class="reference external" href="https://doi.org/10.1021/ja00497a058">https://doi.org/10.1021/ja00497a058</a>.</p>
+</div>
+<div class="citation" id="dept1982" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id3">DEPT1982</a><span class="fn-bracket">]</span></span>
+<p>Doddrell, D. M, D. T Pegg, and M. R Bendall. “Distortionless Enhancement of NMR Signals by Polarization Transfer.” Journal of Magnetic Resonance (1969) 48, no. 2 (June 15, 1982): 323–27. <a class="reference external" href="https://doi.org/10.1016/0022-2364(82)90286-4">https://doi.org/10.1016/0022-2364(82)90286-4</a>.</p>
+</div>
+</div>
+<p><a class="reference external" href="https://www.chemicalbook.com">https://www.chemicalbook.com</a> (Reference experimental NMR values)</p>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../thermo/index.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Thermodynamics and Gas Laws</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../lif/index.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Laser-Induced Fluorescence</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#chemical-shifts">Chemical Shifts</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#j-couplings">J-couplings</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#acid-base-titration">Acid-Base Titration</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#nmr-experiments">NMR Experiments</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#h-1-dimensional-spectrum-with-h2o-suppression"><sup>1</sup>H 1-dimensional spectrum with H<sub>2</sub>O suppression</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#h-1h-2-dimensional-correlation-spectroscopy-cosy"><sup>1</sup>H-<sup>1</sup>H 2-dimensional COrrelation SpectroscopY (COSY)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#h-x-1-dimensional-dept"><sup>1</sup>H-X 1-dimensional DEPT</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#h-x-2-dimensional-hetcor"><sup>1</sup>H-X 2-dimensional HETCOR</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#procedures">Procedures</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#materials">Materials</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-ph-meter-calibration">A. pH meter calibration</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#b-1-0m-hcl-solution-10-ml">B. 1.0M HCl solution, 10-mL</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#c-unknown-in-100mm-phopshate-buffer-10-d2o-10-0-ml">C. Unknown in 100mM phopshate buffer, 10% D<sub>2</sub>O, 10.0-mL</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#d-titration-of-the-solution-with-the-unknown">D. Titration of the solution with the unknown</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#e-collection-of-nmr-spectra">E. Collection of NMR spectra</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#results-and-discussion">Results and Discussion</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#error-analysis">Error Analysis</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#structural-analysis">Structural Analysis</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#calculations">Calculations</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pka-non-linear-regression">pKa Non-Linear Regression</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#questions">Questions</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#grading-rubric">Grading Rubric</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#achievements">Achievements</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#penalties">Penalties</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Chem 343 Instructors
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023, Chem 343 Instructors.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.en"><img src="http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-nc-nd.svg" /> CC BY-NC-ND 4.0</a>
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

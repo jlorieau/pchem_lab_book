@@ -1,0 +1,16 @@
+/* Extra spacing for ordered lists in text */
+ol.arabic li {
+    padding: 0.5em 0;
+    border-bottom: 1px solid #dddddd;
+}
+
+/* Remove bad margin values for RTD ads div box */
+.bd-sidebar-primary div#rtd-footer-container {
+  margin: 0;
+  bottom: 0;
+}
+
+/* Line under level-3 headings */
+h3 {
+  border-bottom: 1px solid #999;
+}

@@ -1,0 +1,1449 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Laser-Induced Fluorescence &#8212; Physical Chemistry Lab Book</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="../../_static/plot_directive.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=83a74c37" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="../../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
+
+    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../_static/doctools.js?v=888ff710"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
+    <script src="../../_static/design-tabs.js?v=36754332"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'experiments/lif/index';</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Nanoparticle" href="../diffraction/index.html" />
+    <link rel="prev" title="Nuclear Magnetic Resonance" href="../nmr/index.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/CAMP.HRZ.SM.RGB.SVG" class="logo__image only-light" alt=""/>
+    <script>document.write(`<img src="../../_static/CAMP.HRZ.SM.INVT.RBG.SVG" class="logo__image only-dark" alt=""/>`);</script>
+  
+  
+    <p class="title logo__title">Physical Chemistry Lab Book</p>
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../safety.html">Safety Rules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../notebook/index.html">Notebook Format</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../report/short.html">Grading and Report</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Experiments</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../thermo/index.html">Thermodynamics and Gas Laws</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../nmr/index.html">Nuclear Magnetic Resonance</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Laser-Induced Fluorescence</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../diffraction/index.html">Nanoparticle</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Appendix</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../changes.html">Authors and Changes</a></li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="sidebar-primary-item">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/experiments/lif/index.rst" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.rst</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Laser-Induced Fluorescence</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#energy-levels-and-transitions">Energy Levels and Transitions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fluorescence">Fluorescence</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#time-resolved-fluorescence-and-quenching">Time-Resolved Fluorescence and Quenching</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#continuous-fluorescence-and-quenching">Continuous Fluorescence and Quenching</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#oxygen-quenching">Oxygen Quenching</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#experimental-setup">Experimental Setup</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#procedures">Procedures</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#materials">Materials</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-150-mm-kcl-stock-solution-500-ml">A. 150 mM KCl stock solution, 500 mL</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#b-0-5m-h2so4-stock-solution-500-ml">B. 0.5M H<sub>2</sub>SO<sub>4</sub> stock solution, 500 mL</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#c-25-um-quinine-sulfate-in-0-5m-h2so4-stock-solution-100-ml">C. 25 uM quinine sulfate in 0.5M H<sub>2</sub>SO<sub>4</sub> stock solution, 100 mL</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#d-10um-quinine-sulfate-in-0-40mm-kcl-samples-5x5-ml">D. 10uM quinine sulfate in 0-40mM KCl samples, 5x5 mL:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#e-continuous-fluorescence-spectra">E. Continuous Fluorescence Spectra</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#f-time-resolved-fluorescence-experiment">F. Time-Resolved Fluorescence Experiment</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#results-and-discussion">Results and Discussion</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#calculations">Calculations</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#time-resolved-fit">Time-resolved fit</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#quencher-rate-fit">Quencher rate fit</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#stern-volmer-fit">Stern-Volmer fit</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#questions">Questions</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section id="laser-induced-fluorescence">
+<h1>Laser-Induced Fluorescence<a class="headerlink" href="#laser-induced-fluorescence" title="Link to this heading">#</a></h1>
+<section id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h2>
+<p>In this experiment you will measure the decay kinetics of
+fluorescence for quinine sulfate in water solutions. Quinine is used as a
+fluorescence standard because the fluorescence is not quenched (decreased) by
+oxygen but can be quenched in a controlled manner by adding atomic anions
+(F<sup>-</sup>, Cl<sup>-</sup>, I<sup>-</sup> and Br<sup>-</sup>) to the
+solution <a class="reference internal" href="#jphotochem1990" id="id1"><span>[JPhotochem1990]</span></a>. We will use a laser to optically excite quinine
+and study the kinetics of quenching as a function of Cl<sup>-</sup> anion
+concentration.</p>
+<section id="energy-levels-and-transitions">
+<h3>Energy Levels and Transitions<a class="headerlink" href="#energy-levels-and-transitions" title="Link to this heading">#</a></h3>
+<p>The energy levels in a molecule can be broken down into their component
+electronic, vibrational and rotational energy levels.</p>
+<div class="math notranslate nohighlight">
+\[E(n, v, J) = E(n)_{electronic} + E(v)_{vibrational} + E(J)_{rotational}\]</div>
+<p>The Boltzmann distribution tells us that at room temperature, molecules only
+occupy the <em>ground state</em> for electronic and vibrational energy levels.
+Electronic energy levels in a molecule are the Hamiltonian eigenvalues of
+<em>molecular orbitals</em> (MO) wavefunctions.</p>
+<p>Molecules can absorb energy from heat, collisions or photons to populate
+excited energy levels. To stimulate an electron from one electronic energy
+level (molecular orbital) to another, the molecule must absorb a photon with
+the correct frequency (<span class="math notranslate nohighlight">\(\nu\)</span>)–typically in the UV or visible frequency
+range for electronic transitions.</p>
+<div class="math notranslate nohighlight">
+\[h \nu = \Delta E = E_{excited} - E_{ground}\]</div>
+<div class="note admonition">
+<p class="admonition-title">Electronic energy level multiplicities</p>
+<p>Electronic energy levels come in a few varieties based on electron spin
+multiplicities. The number of electronic states can be counted from the net
+electron spin angular momentum of a molecule, S, with the formula: 2S + 1.
+Diamagnetic molecules, like water or quinine, have an equal number of
+electrons in molecular orbitals with a spin up (<span class="math notranslate nohighlight">\(m_s = 1/2\)</span>), as
+there are electrons with spin down (<span class="math notranslate nohighlight">\(m_s = -1/2\)</span>). The net electron
+spin angular momentum is zero (S = 0) such that there is only a single
+electronic state–<em>i.e.</em> a singlet ‘S’ state. Radical molecules have 1
+unpaired electron in molecular orbitals with a net electron spin angular
+momentum S = 1/2 such that there are two degenerate electronic
+states–<em>i.e.</em> a doublet ‘D’ state. Molecules with two unpaired electrons
+with the same spin have a net angular momentum S = 1 such that there are
+three degenerate electronic states–<em>i.e.</em> a triplet ‘T’ state. The
+energy levels become non-degenerate in a magnetic field.</p>
+</div>
+<p>In absorption spectroscopy of diamagnetic molecules, we study electronic
+transitions from a ground singlet electronic energy level (S<sub>0</sub>),
+the Highest Occupied Molecular Orbital (HOMO), to an excited singlet
+electronic energy level (S<sub>1</sub>), the Lowest Unoccupied Molecular Orbital
+(LUMO). These transitions are commonly illustrated with a Jablonski diagram.</p>
+<figure class="align-default" id="id10">
+<img alt="Example Jablonski diagram for a molecule" src="../../_images/jablonksi.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 2 </span><span class="caption-text">An example Jablonski diagram.</span><a class="headerlink" href="#id10" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>At room temperature, electrons in diamagnetic molecules are paired and start
+in the ground singlet HOMO (S<sub>0</sub>) state and ground vibrational state
+(v=0). An electron may <strong>absorb</strong> a photon of the correct frequency to an
+excited singlet LUMO state (S<sub>1</sub>) and excited vibrational state–in
+the above diagram the molecule is excited to the v=3, v=2 and v=1 vibrational
+levels with photons of different frequencies and energies. Thereafter, the
+molecule relaxes by <strong>non-radiative</strong> or <strong>vibrational relaxation</strong> through
+collisions with other molecules.</p>
+<p>In the excited electronic state, the molecule may:</p>
+<ol class="arabic simple">
+<li><p><strong>internally convert</strong> to an excited vibrational state of the ground
+electronic state (S<sub>0</sub>) and continue to lose energy non-radiatively
+(<em>i.e.</em> without emiting a photon) until the system has reached the ground
+vibrational state (v=0).</p></li>
+<li><p><strong>fluoresce</strong> by emitting a photon and populating an excited vibrational
+state of the ground electronic state (S<sub>0</sub>). Thereafter, the system
+continues to lose energy non-radiatively until the system has reached the
+ground vibrational state (v=0).</p></li>
+<li><p><strong>intersystem cross</strong> to triplet states, lose energy non-radiately, then
+slowly <strong>phosphoresce</strong> back to an excited vibrational state of the ground
+electronic state (S<sub>0</sub>), before losing energy non-radiatevely to the
+ground vibrational state (v=0).</p></li>
+</ol>
+<p>Some or all of these relaxations mechanisms may be available, depending on the
+molecule, and the prevalence of each also depend on the kinetics of each
+process. Absorption typically occurs on a femtosecond (10<sup>-15</sup> s)
+timescale, or the timescale it takes a photon to travel one wavelength. The
+other relaxation processes occur on a slower timescale:
+vibrational relaxation (<em>ca.</em> 10<sup>-11</sup>-10<sup>-9</sup> s),
+fluorescence (<em>ca.</em> 10<sup>-8</sup>-10<sup>-4</sup> s) and
+phosphorescence (<em>ca.</em> 10<sup>-4</sup>-10<sup>2</sup> s) <a class="reference internal" href="#harris" id="id2"><span>[Harris]</span></a>.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header sd-bg-info sd-bg-text-info">
+<span class="sd-summary-icon"><svg version="1.1" width="1.0em" height="1.0em" class="sd-octicon sd-octicon-info" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8zm6.5-.25A.75.75 0 017.25 7h1a.75.75 0 01.75.75v2.75h.25a.75.75 0 010 1.5h-2a.75.75 0 010-1.5h.25v-2h-.25a.75.75 0 01-.75-.75zM8 6a1 1 0 100-2 1 1 0 000 2z"></path></svg></span>Selection rules and the Frank-Condon Principle<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">The electric field component of photons interact with the electric
+dipoles of molecules. The electric dipole can be measured
+from the expectation value of the molecules wavefunctions. To simplify the
+discussion, we will only focus on the electric dipole and that depends on
+the electron coordinates, <span class="math notranslate nohighlight">\(\mu_e\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[\langle \mu \rangle = \langle \psi_e (n') \psi_v (n', v') \rvert \hat{\mu_e} \lvert \psi_e (n) \psi_v (n, v) \rangle\]</div>
+<p class="sd-card-text">In this case, we will focus on the electronic states (<span class="math notranslate nohighlight">\(\psi_e\)</span>) and
+vibrational states (<span class="math notranslate nohighlight">\(\psi_v\)</span>) that impact the expectation value.
+The vibrational states only depend on the nuclear coordinates–<em>i.e.</em> it
+does not interact with the electric dipole from electron coordinates–and it
+can be factored.</p>
+<div class="math notranslate nohighlight" id="equation-eq-franck-condon">
+<span class="eqno">(1)<a class="headerlink" href="#equation-eq-franck-condon" title="Link to this equation">#</a></span>\[\langle \mu \rangle = \boldsymbol{\langle \psi_v (n', v') \vert \psi_v (n, v) \rangle} \langle \psi_e (n')  \rvert \hat{\mu_e} \lvert \psi_e (n)  \rangle\]</div>
+<p class="sd-card-text">The second bracket (not in bold) represents the transition from an electronic
+state <span class="math notranslate nohighlight">\(n\)</span> to a different electronic state <span class="math notranslate nohighlight">\(n'\)</span> when a molecule
+absorbs a photon. It is for this reason that we name the above the
+<strong>transition electric dipole</strong> since it describes the transition from
+one electronic state from another. The electric dipole moment operator,
+<span class="math notranslate nohighlight">\(\hat{\mu}\)</span>, may not commute with the eigenbasis of the Hamiltonian,
+and it may change the eigenstates <span class="math notranslate nohighlight">\(n\)</span> to a new set of eigenstate,
+<span class="math notranslate nohighlight">\(n'\)</span>. This bracket’s integral follows the electronic transition
+selection rules.</p>
+<p class="sd-card-text">Discussion of the the vibrational component requires a bit of background.
+In vibrational (IR) spectroscopy, we evaluated the transition electric
+dipole for the nuclear coordinates, <span class="math notranslate nohighlight">\(\mu_n\)</span>, and we found that
+the following selection rule for vibrational transitions:
+<span class="math notranslate nohighlight">\(v' = v \pm 1\)</span>. These were for vibrational transitions in the ground
+electronic state.</p>
+<p class="sd-card-text">In electronic spectroscopy, we are inducing electronic transitions from
+state <span class="math notranslate nohighlight">\(n\)</span> to state <span class="math notranslate nohighlight">\(n'\)</span>. Electrons are excited into
+non-bonding or anti-bonding molecular orbitals, which can have a different
+bond order, bond length and vibrational properties than the ground state
+molecule. For this reason, the vibrational states also depend on the
+electronic state, <span class="math notranslate nohighlight">\(\lvert \psi_v (n, v) \rangle\)</span>.</p>
+<p class="sd-card-text">The vibrational eigenstates are orthogonal within a given electronic state.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\langle \psi_v(n,v') \vert \psi_v(n, v) \rangle = 0 \qquad \text{when } v \neq v' \\
+\langle \psi_v(n,v') \vert \psi_v(n, v) \rangle = 1 \qquad \text{when } v = v'\end{split}\]</div>
+<p class="sd-card-text">In equation <a class="reference internal" href="#equation-eq-franck-condon">(1)</a>, the first bracket in bold is the
+<em>Franck-Condon factor</em>, F.</p>
+<div class="math notranslate nohighlight">
+\[\langle \psi_v (n', v') \vert \psi_v (n, v) \rangle = F\]</div>
+<p class="sd-card-text">F may be non-zero for many excited vibrational
+states in the excited electronic state. Since <span class="math notranslate nohighlight">\(n \neq n'\)</span> for
+electronic transitions, these eigenfunctions are not orthogal when
+<span class="math notranslate nohighlight">\(v \neq v'\)</span>. This means that for an electronic transition from
+<span class="math notranslate nohighlight">\(n\)</span> to <span class="math notranslate nohighlight">\(n'\)</span>, vibrational transitions from <span class="math notranslate nohighlight">\(v = 0\)</span> to
+<span class="math notranslate nohighlight">\(v' = 1, 2, 3, 4,\)</span> etc. may be possible. The probability of these
+transitions dependent on the magnitude of the Franck-Condon factor integral.</p>
+<p class="sd-card-text">See section 5-4 in <a class="reference internal" href="#harris" id="id3"><span>[Harris]</span></a> for a more detailed discussion on selection
+rules and the Franck-Condon factor.</p>
+</div>
+</details></section>
+<section id="fluorescence">
+<h3>Fluorescence<a class="headerlink" href="#fluorescence" title="Link to this heading">#</a></h3>
+<p>Fluorescence is the process by which molecules emit a photon when relaxing
+from an excited electronic singlet state (S<sub>1</sub>). Vibrational relaxation
+in the excited state before emission (S<sub>1</sub>) and in the ground electronic
+state after emission (S<sub>0</sub>) reduces the energy of the emitted photon.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}E &amp;= h \nu \\
+E_{absorbed} &amp;&gt; E_{fluoresced}\end{split}\]</div>
+<p>Consequently, the emitted photon has a lower frequency and a larger wavelength
+than the absorbed photon</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\nu_{absorbed} &amp;&gt; \nu_{fluoresced} \\
+\lambda_{absorbed} &amp;&lt; \lambda_{fluoresced}\end{split}\]</div>
+<p>Photons in the visible spectrum shift to higher wavelengths toward photons that
+are red in color (<em>ca.</em> 600 nm). For this reason, we say that fluoresced
+photons are <em>red shifted</em> from the absorbed photon. This phenomenon is known
+as the <strong>Stokes shift</strong>.</p>
+<p>From a practical perspective, fluorescence spectroscopy is more <em>sensitive</em>
+than absorbance spectroscopy. Absorbance spectroscopy measures the
+fraction of photons that have transmitted through the sample, by measuring
+light in the path of the light source. Very small amounts
+of absorbance–<em>e.g.</em> 1 photon in 1 million– can be difficult to detect,
+particularly if the light source does not have a stable intensity.
+Fluorescence is measured at a right angle from the light source, and every
+photon detected can be guaranteed to have come from a fluorescing molecule.
+Consequently, the lower noise threshold produces much lower limits of
+detection (LOD) for fluorescence experiments in comparison to absorbance
+experiments.</p>
+</section>
+<section id="time-resolved-fluorescence-and-quenching">
+<h3>Time-Resolved Fluorescence and Quenching<a class="headerlink" href="#time-resolved-fluorescence-and-quenching" title="Link to this heading">#</a></h3>
+<p>Fluorescence can be inhibited by a quencher. Quenchers that are
+effective for some fluorophores may not be effective for others,
+and many quenching mechanisms exist <a class="reference internal" href="#lakowicz" id="id4"><span>[Lakowicz]</span></a>. The two main
+categories of fluorescence quenching are <em>dynamic quenching</em> and
+<em>static quenching</em>.</p>
+<p>In the absence of a quencher, fluorescence follows a relatively simple kinetic
+scheme.</p>
+<figure class="align-default" id="id11">
+<a class="reference internal image-reference" href="../../_images/kinetics.png"><img alt="Kinetic schemes for fluorescence, dynamic quenching and static quenching" src="../../_images/kinetics.png" style="width: 450px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 3 </span><span class="caption-text">Kinetic schemes for fluorescence, dynamic quenching and static quenching</span><a class="headerlink" href="#id11" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>A fluorophore (F) absorbs a photon (hv<sub>a</sub>) at a rate
+k<sub>a</sub>. The excited fluorophore (F<sup>*</sup>) may emit a red-shifted photon
+(hv<sub>f</sub>) at a rate k<sub>f</sub> or the molecule may relax non-radiatively
+at a rate k<sub>nr</sub>. The rate of excited fluorophore and intensity of
+fluoresced photons (hv<sub>f</sub>) can be written as follows:</p>
+<div class="math notranslate nohighlight" id="equation-fluoro-full-rate">
+<span class="eqno">(2)<a class="headerlink" href="#equation-fluoro-full-rate" title="Link to this equation">#</a></span>\[\frac{d[F^*]}{dt} = - \frac{d[h \nu_f]}{dt} = k_a [F][h \nu_a] - k_f [F^*] - k_{nr} [F^*]\]</div>
+<p>The rates depend on concentrations, and we’ve labeled the incoming intensity
+or number of absorbed photons as a concentration, <span class="math notranslate nohighlight">\([h \nu_a]\)</span>, like a
+chemical reagent in a reaction. This notation is commonly employed in
+laser-induced chemistry <a class="reference internal" href="#gutow" id="id5"><span>[Gutow]</span></a>. This can be thought as the number of photons
+in a volume of solvent, which is directly proportional to the intensity of the
+light source, and it becomes zero when the light source is turned off.</p>
+<p>A light pulse from a laser creates excited fluorophores, [F<sup>*</sup>]. Once
+the the laser light is shut off, <span class="math notranslate nohighlight">\([h \nu_a] = 0\)</span>.</p>
+<div class="math notranslate nohighlight" id="equation-fluoro-rate">
+<span class="eqno">(3)<a class="headerlink" href="#equation-fluoro-rate" title="Link to this equation">#</a></span>\[\begin{split}\frac{d[F^*]}{dt} &amp;= - (k_f + k_{nr}) [F^*] \\
+&amp;= - k' [F^*]\end{split}\]</div>
+<p>In this equation, we cannot distinguish the rate of fluorescence (k<sub>f</sub>)
+and the rate non-radiative emission (k<sub>nr</sub>), so these are grouped
+together into a new excited fluorophore decay rate, k’.</p>
+<p>The rate equation can be integrated.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\int_{[F^*(0)]}^{[F^*(t)]} \frac{d[F^*]}{[F^*]} &amp;= - \int_0^t k' dt \\
+\ln \frac{[F^*(t)]}{[F^*(0)]} &amp;= - k' t\end{split}\]</div>
+<p>Rearranging the equation yields a mono-exponential decay.</p>
+<div class="math notranslate nohighlight" id="equation-fluoro-monoexp">
+<span class="eqno">(4)<a class="headerlink" href="#equation-fluoro-monoexp" title="Link to this equation">#</a></span>\[[F^*(t)] = [F^*(0)] e^{- k' t}\]</div>
+<p>The concentration of the excited fluorophore can be calculated at time ‘t’,
+<span class="math notranslate nohighlight">\([F^*(t)]\)</span>, after the laser pulse. It depends on the concentration of
+excited fluorophore immediately after the laser pulse, <span class="math notranslate nohighlight">\([F^*(0)]\)</span>.
+In practice, we do no measure this concentration directly, but we infer this
+concentration from the number of fluorescent photons measured.</p>
+<div class="math notranslate nohighlight">
+\[[F^*] \propto [h \nu_f] \propto I_{fluorescence}\]</div>
+<p>The mono-exponential from equation <a class="reference internal" href="#equation-fluoro-monoexp">(4)</a> can be measured
+from the intensity of fluorescence after the laser pulse.</p>
+<div class="math notranslate nohighlight" id="equation-fluoro-monoexp-intensity">
+<span class="eqno">(5)<a class="headerlink" href="#equation-fluoro-monoexp-intensity" title="Link to this equation">#</a></span>\[I(t) = I(0) e^{-k' t}\]</div>
+<p><strong>Dynamic quenching</strong>. Incorporating a quencher modifies the kinetics of
+fluorescence decay. Collision with a dynamic quencher (Q) produces a new
+non-radiative pathway that depends on the concentration of the quencher, adding
+another term to equation <a class="reference internal" href="#equation-fluoro-rate">(3)</a>.</p>
+<div class="math notranslate nohighlight">
+\[\frac{d[F^*]}{dt} = -k' [F^*] - k_Q [Q][F^*]\]</div>
+<p>Integrating and rearranging as we did before creates a new function that depends
+on the concentration of the quencher, [Q].</p>
+<div class="math notranslate nohighlight" id="equation-fluoro-dynamic-quench">
+<span class="eqno">(6)<a class="headerlink" href="#equation-fluoro-dynamic-quench" title="Link to this equation">#</a></span>\[\begin{split}I(t) &amp;= I(0) e^{-(k' + k_Q[Q])t} \\
+     &amp;= I(0) e^{-k_{app}t}\end{split}\]</div>
+<p>The apparent rate of decay, k<sub>app</sub>, now depends on the concentration of
+the quencher.</p>
+<div class="math notranslate nohighlight" id="equation-fluoro-dynamic-rate-constant">
+<span class="eqno">(7)<a class="headerlink" href="#equation-fluoro-dynamic-rate-constant" title="Link to this equation">#</a></span>\[k_{app} = k' + k_Q [Q]\]</div>
+<div class="note admonition">
+<p class="admonition-title">Rates of dynamic quenching</p>
+<p>The fastest rate a (bimolecular) reaction can take place between two
+molecules in solution is limited by the diffusional rate, k<sub>D</sub>.
+(Molecules can’t react faster than the time it takes them to collide into
+each other)</p>
+<p>The diffusion controlled rate can be estimated from a derivation of the
+Stokes-Einstein rate of diffusion <a class="reference internal" href="#physicalchemistry" id="id6"><span>[PhysicalChemistry]</span></a>.</p>
+<div class="math notranslate nohighlight" id="equation-diffusion-controlled">
+<span class="eqno">(8)<a class="headerlink" href="#equation-diffusion-controlled" title="Link to this equation">#</a></span>\[k_D = \frac{8RT}{3 \eta}\]</div>
+<p>The viscosity (<span class="math notranslate nohighlight">\(\eta\)</span>) of water at room temperature
+(T = 298K) is 1.0 centipoise
+(<span class="math notranslate nohighlight">\(1 cP = 10^{-3} Pa \cdot s = 10^{-3} kg \cdot m^{-1} s^{-1}\)</span>).
+The rate constant for diffusion in water at room temperature can be
+calculated.</p>
+<div class="math notranslate nohighlight">
+\[k_D = \frac{8(8314 L \cdot Pa \cdot K^{-1} mol^{-1})(298K)}{3 (10^{-3} Pa \cdot s)} = 6.6 \cdot 10^9 M^{-1} \cdot s^{-1}\]</div>
+<p>Of course, other effects might be at play such as electrostatic forces
+between diffusing ions.</p>
+<p>For neutral molecules, the dynamic quenching rate is equal or smaller
+than the rate constant for diffusion, <span class="math notranslate nohighlight">\(k_D \geq k_Q\)</span>. In the case
+that they’re equal, all collisions between a dynamic quencher and a
+fluorophore lead to a quenching event.</p>
+</div>
+<p><strong>Static quenching</strong>. Static quenchers are molecules that “trap” the ground
+state fluorophore into a complex that cannot fluoresce, <span class="math notranslate nohighlight">\([F \cdot Q]\)</span>.
+Effectively, static quenchers diminish the concentration of fluorophore
+molecules that can fluoresce, <span class="math notranslate nohighlight">\([F]\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[[F]_0 = [F] + [F \cdot Q]\]</div>
+<p>The initial or total concentration of fluorophore, <span class="math notranslate nohighlight">\([F]_0\)</span>, is
+distributed between the free fluorophore, <span class="math notranslate nohighlight">\([F]\)</span>, and the fluorophore
+complexed to the static quencher, <span class="math notranslate nohighlight">\([F \cdot Q]\)</span>. The binding of the
+static quencher can be described by an equilibrium with an equilibrium
+constant, <span class="math notranslate nohighlight">\(K_{eq}\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[K_{eq} = \frac{[F-Q]}{[F][Q]}\]</div>
+<p>We can combine the two equations.</p>
+<div class="math notranslate nohighlight">
+\[K_{eq} = \frac{[F]_0 - [F]}{[F][Q]}\]</div>
+<p>And solve for the concentration of free fluorophore, <span class="math notranslate nohighlight">\([F]\)</span>:</p>
+<div class="math notranslate nohighlight" id="equation-static-quench-conc">
+<span class="eqno">(9)<a class="headerlink" href="#equation-static-quench-conc" title="Link to this equation">#</a></span>\[\begin{split}K_{eq}[F][Q] &amp;= [F]_0 - [F] \\
+[F] &amp;= \frac{[F]_0}{K_{eq}[Q] + 1}\end{split}\]</div>
+<p>When the concentration of the static quencher is zero, <span class="math notranslate nohighlight">\([Q] = 0\)</span>, or
+the “quencher” does not interact with the unexcited fluorophore,
+<span class="math notranslate nohighlight">\(K_{eq} = 0\)</span>, the the concentration of the fluorophore is equal to the
+initial or total concentration of fluorophore, <span class="math notranslate nohighlight">\([F] = [F]_0\)</span>.</p>
+<p>When looking at the kinetic equation <a class="reference internal" href="#equation-fluoro-full-rate">(2)</a> for fluorescence,
+the difference in unexcited fluorphore concentration only impacts the first
+term.</p>
+<div class="math notranslate nohighlight">
+\[\frac{d[F^*]}{dt} =  k_a [h \nu_a] \frac{[F]_0}{K_{eq}[Q] + 1} - k' [F^*]\]</div>
+<p>However, immediately after the laser pulse when <span class="math notranslate nohighlight">\([h \nu_a] = 0\)</span>, the rate
+equation appears identical to fluorescence without a quencher.</p>
+<div class="math notranslate nohighlight">
+\[\frac{d[F^*]}{dt} =  - k' [F^*]\]</div>
+<p>And the intensity decay of the fluorescence follows the same mono-exponential.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}I(t) &amp;= I(0) e^{-k' t} \\
+     &amp;= I(0) e^{-k_{app}t}\end{split}\]</div>
+<p>The apparent rate of decay, k<sub>app</sub>, does not depend on the concentration
+of the quencher.</p>
+<div class="math notranslate nohighlight" id="equation-fluoro-static-rate-constant">
+<span class="eqno">(10)<a class="headerlink" href="#equation-fluoro-static-rate-constant" title="Link to this equation">#</a></span>\[k_{app} = k'\]</div>
+<p>So then how can we tell a static quencher from a non-quenching molecule? The
+fluorescence decay rate is the same as it was without the quenching molecule,
+but the initial fluorescence intensity, I(0), is reduced because there are
+fewer fluorescent molecules.</p>
+<div class="math notranslate nohighlight">
+\[[F^*] \propto [F] \propto I_{fluorescence}\]</div>
+<div class="note admonition">
+<p class="admonition-title">Example fluorescence decay curves for different quenchers</p>
+<p>The following shows example fluorescence intensity decays after a laser
+pulse for different types of quenchers.</p>
+<figure class="align-default">
+<img alt="../../_images/index-1.png" class="plot-directive" src="../../_images/index-1.png" />
+</figure>
+<p>In all three plots, the effective decay rate, <span class="math notranslate nohighlight">\(k'\)</span>, is
+<span class="math notranslate nohighlight">\(3 \cdot 10^6 s^{-1}\)</span>. The fluorescence decay without quencher
+was modeled with equation <a class="reference internal" href="#equation-fluoro-monoexp-intensity">(5)</a>. The
+fluorescence decay with dynamic quencher was modeled with equation
+<a class="reference internal" href="#equation-fluoro-dynamic-quench">(6)</a>, a quencher concentration [Q] = 1.0 mM
+and a quencher rate <span class="math notranslate nohighlight">\(k_Q = 10^9 M^{-1} s^{-1}\)</span>. The fluorescence
+decay with static quencher was modeled with equation
+<a class="reference internal" href="#equation-fluoro-monoexp-intensity">(5)</a> and an initial intensity scaled by equation
+<a class="reference internal" href="#equation-static-quench-conc">(9)</a> with a quencher concentration [Q] = 1.0 mM
+and a quencher equilibrium constant <span class="math notranslate nohighlight">\(K_{eq} = 1000 M^{-1}\)</span>.</p>
+</div>
+</section>
+<section id="continuous-fluorescence-and-quenching">
+<h3>Continuous Fluorescence and Quenching<a class="headerlink" href="#continuous-fluorescence-and-quenching" title="Link to this heading">#</a></h3>
+<p>Fluorescence experiments are also commonly measured in continuous
+mode–that is, without resolving the time dependency of the intensity
+decay. In continuous experiments, the light source is <em>continuously</em>
+turned on and the fluorophore is <em>continuously</em> absorbing photons.
+The rate equation <a class="reference internal" href="#equation-fluoro-full-rate">(2)</a> for the fluorophore must be
+updated accordingly.</p>
+<div class="math notranslate nohighlight">
+\[\frac{d[F^*]}{dt} = 0 = k_a [F][h \nu_a] - k' [F^*]\]</div>
+<p>As long as the light source intensity remains constant and time independent,
+there are two changes:</p>
+<ol class="arabic simple">
+<li><p>The excited fluorophore concentration stops changing
+such that <span class="math notranslate nohighlight">\(\frac{d[F^*]}{dt} = 0\)</span> and the concentration reaches a
+<em>steady-state</em>, constant concentration, [F<sup>*</sup>].</p></li>
+<li><p>The light source is continuously turned on so <span class="math notranslate nohighlight">\([h \nu_a]\)</span> is no longer
+zero.</p></li>
+</ol>
+<p>The steady-state concentration of the excited fluorophore, [F<sup>*</sup>]<sub>ss</sub>, can
+be calculated without quencher.</p>
+<div class="math notranslate nohighlight">
+\[[F^*] = \frac{k_a}{k'} [F]_0 [h \nu_a ]\]</div>
+<p>Here we recognized that the unexcited fluorophore concentration is equal to the
+initial or total concentration, <span class="math notranslate nohighlight">\([F] = [F]_0\)</span>.</p>
+<p>In the presence of a <em>dynamic quencher</em>:</p>
+<div class="math notranslate nohighlight">
+\[[F^*] = \frac{k_a}{(k' + k_Q[Q])} [F]_0 [h \nu_a ]\]</div>
+<p>and dividing by <span class="math notranslate nohighlight">\([F^*]\)</span> without quencher yields the Stern-Volmer
+equation.</p>
+<div class="math notranslate nohighlight" id="equation-stern-volmer">
+<span class="eqno">(11)<a class="headerlink" href="#equation-stern-volmer" title="Link to this equation">#</a></span>\[\frac{[F^*]_{0}}{[F^*]} = \frac{k' + k_Q[Q]}{k'} = 1 + k_Q \tau_0 [Q]\]</div>
+<p>In the last equation, we made use of <span class="math notranslate nohighlight">\(\tau_0 = k'^{-1}\)</span>, which is the
+lifetime of the excited state. The lifetime, as with k’, depends on the rate
+of fluorescence and the rate of non-radiative emission.</p>
+<p>In the presence of a <em>static quencher</em>:</p>
+<div class="math notranslate nohighlight">
+\[[F^*] = \frac{k_a}{k'(K_{eq}[Q] + 1)} [F]_0 [h \nu_a ]\]</div>
+<p>and dividing by <span class="math notranslate nohighlight">\([F^*]\)</span> without quencher yields an equivalent
+varient of the Stern-Volmer equation.</p>
+<div class="math notranslate nohighlight">
+\[\frac{[F^*]_{0}}{[F^*]} = 1 + K_{eq} [Q]\]</div>
+<p>Plotting the concentration of the quencher, [Q], against the factor reduction
+in fluorescence intensity, <span class="math notranslate nohighlight">\(\frac{[F^*]_{0}}{[F^*]}\)</span>, from the quencher
+yields a linear equation for dynamic and static quenchers. For the former, the
+slope is <span class="math notranslate nohighlight">\(k_Q \tau_0\)</span> and for the latter the slope is <span class="math notranslate nohighlight">\(K_{eq}\)</span>. Both
+have an intercept of 1.0.</p>
+<p>Altogether, the Stern-Volmer equation and continuous fluorescence can be used
+to identify whether a molecule is a quencher. Unfortunately, it’s not useful
+in distinguishing between a dynamic and a static quencher.</p>
+</section>
+<section id="oxygen-quenching">
+<h3>Oxygen Quenching<a class="headerlink" href="#oxygen-quenching" title="Link to this heading">#</a></h3>
+<p>Oxygen, <span class="math notranslate nohighlight">\(\ce{O2}\)</span>, is a paramagnetic molecule that is a very effective
+<em>dynamic quencher</em> in many fluorophores. The concentration of dissolved
+oxygen can be variable and difficult to determine in a solution. The net effect
+of oxygen’s quenching is to increase the apparent rate, k’, and reduce the
+lifetime of the excited state, <span class="math notranslate nohighlight">\(\tau_0\)</span>. This reduction in the accuracy
+of the rate can by circumvented by purging as much dissolved <span class="math notranslate nohighlight">\(\ce{O2}\)</span>
+as possible–either by placing the solution in a weak-to-moderate vacuum or
+bubbling <span class="math notranslate nohighlight">\(\ce{N2}\)</span> gas in the solution.</p>
+</section>
+<section id="experimental-setup">
+<h3>Experimental Setup<a class="headerlink" href="#experimental-setup" title="Link to this heading">#</a></h3>
+<p>You will use a laser, a monochromator, a photomultiplier tube (PMT) and a
+digital storage oscilloscope to collect the time-resolved, laser-induced
+fluorescence of quinine sulfate at approximately 10-5 M and 0.5 M
+<span class="math notranslate nohighlight">\(\ce{H2SO4}\)</span> in water. You will observe the effects of <span class="math notranslate nohighlight">\(\ce{Cl-}\)</span>
+as a quencher by varying its concentration in the solution.</p>
+<figure class="align-default" id="id12">
+<img alt="../../_images/expt_setup.png" src="../../_images/expt_setup.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 4 </span><span class="caption-text">Block diagram of the laser, monochromator, photomultiplier tube (PMT) and
+oscilloscope used in the experimental procedure. The experimental setup
+includes lenses (L), filters (F1, F2), a beam splitter (B), mirrors (M1-M4),
+slits (S1, S2) and a grating (G).</span><a class="headerlink" href="#id12" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p><strong>N2 laser</strong>. The N<sub>2</sub> gas laser produces photons in the
+ultraviolet range (337.1 nm). The output from the laser is split by
+beamsplitter (B). Part of the laser beam is focused by lens (L) onto the
+sample cuvette while the other part passes through a neutral density filter
+(F1) to reduce its intensity and strikes a photodiode, triggering data
+acquisition by the digital oscilloscope.</p>
+<p><strong>Monochromator</strong>. A monochromator separates the frequencies of photons that
+are combined in the incoming light. After the laser beam travels through the
+sample, we use the monochromator to select a narrow range of frequencies for
+the fluoresced (emitted) light by the same.</p>
+<p>In the experimental setup, the fluorescence is collected at right angles
+to the incoming laser beam, passes through a neutral density filter (F2),
+and then into the monochromator. The monochromator is an Ebert optical mount.
+The light passes through the entrance slit S1, striking a 45<sup>o</sup>
+mirror (M1), and is reflected to a large collimating mirror M2. From this
+mirror it is it is reflected to the grating (G) and dispersed back to the
+collimating mirror (M3). The light beam, returning to focus, is reflected by a
+45<sup>0</sup> mirror (M4) out through exit slit (S2) and into the
+photomultiplier housing.</p>
+<p>The monochromator should be set to detect 480 nm fluorescence. This is far
+from the laser frequency of 337.1 nm and is the frequency at which the
+fluorescence exhibits simple exponential decay. At other wavelengths the
+emission rate is affected by a number of other processes that have not been
+considered, and requires a sum of two or more exponential functions to fit
+the decay <a class="reference internal" href="#barrow" id="id7"><span>[Barrow]</span></a>. If there is time, you might want to collect fluorescence at
+about 390 – 400 nm from a sample without quencher to see if the
+biexponential decay can be observed.</p>
+<p><strong>Photomultiplier Tube</strong>. The light that gets through the monochromator is
+detected by a photomultiplier tube (PMT). PMTs are based on the
+photoelectric effect. After a light photon ejects an electron from the
+photocathode the electron is accelerated by a potential voltage into
+another electrode. The accelerated electron knocks many electrons out of
+the electrode, which are then accelerated to another electrode. This
+process is repeated 9 times here (9 stage PMT) giving a current gain
+of about 10<sup>6</sup> – 10<sup>7</sup>! With a PMT, it is possible to
+see the signal from a single photon; if you have a 350 MHz or greater
+oscilloscope and the fluorescence intensity is low enough you may be
+able to see individual spikes (photons) in the decay signal from the
+PMT.</p>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>Typically PMTs operate at a negative voltage of between 500 and 1250 V.
+Be very careful: high voltages are dangerous and a PMT can be easily damaged
+by exposing it to too much light while voltages are applied. To avoid
+damaging the PMT do not apply voltage to the tube until the room lights
+are off and start looking for signal at a low voltage increasing the
+voltage only enough to get a signal of a few hundred millivolts at its
+peak. DO NOT TURN THE VOLTAGE ABOVE 800 V! If you have any questions,
+consult with teaching staff.</p>
+</div>
+<p><strong>Oscilloscope</strong>. Oscilloscopes are instruments that display varying voltages
+as a function of time. They often used to analyze, diagnose and characterize
+the frequency and amplitudes of signals in industrial and laboratory settings.
+Digital oscilloscopes, as used here, use an analog-to-digital converter (DAC)
+to digitize analog voltage signals at regular intervals and convert these
+to a digital file format that can be analysed on a computer.</p>
+<div class="note admonition">
+<p class="admonition-title">Digital sampling and the Nyquist frequency</p>
+<p>Since the signal is sampled at regular intervals, <span class="math notranslate nohighlight">\(\Delta t\)</span>, changes
+in the signal that are <em>faster</em> than this interval will either be missed
+or “aliased” giving an incorrect frequency measurement. This limitation is
+commonly expressed as an upper limit of the frequencies measured, known as
+the <em>Nyquist frequency</em>.</p>
+<div class="math notranslate nohighlight">
+\[\nu_{Nyquist} = \frac{1}{2 \Delta t}\]</div>
+<p>The factor of 2 arises arises because the range of frequencies measured,
+the spectral width, extends to positive and negative frequencies. For
+example, a sample rate of 1 ms can sample frequencies between -500 Hz and
+500 Hz.</p>
+</div>
+<p>The oscilloscope only displays data when told to do so by the occurrence of a
+trigger. In this experiment a small amount of the light pulse out of the
+laser is used to trigger the beginning of data collection via the photodiode.
+This is done since the signal of interest only occurs over a very brief period
+of time right after the laser pulse. Mounds of noise (useless data) would be
+collected were the signal from the PMT collected at other times.</p>
+</section>
+</section>
+<section id="procedures">
+<h2>Procedures<a class="headerlink" href="#procedures" title="Link to this heading">#</a></h2>
+<p>Read and prepare all of the following instructions before starting. Carefully
+follow the instructions and particularly the alerts.</p>
+<section id="materials">
+<h3>Materials<a class="headerlink" href="#materials" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>1M H<sub>2</sub>SO<sub>4</sub> solution</p></li>
+<li><p>150 mM KCl stock solution <em>or</em> KCl<sub>(s)</sub></p></li>
+<li><p>25 uM quinine sulfate in 0.5 M H<sub>2</sub>SO<sub>4</sub> stock solution <em>or</em> quinine sulfate (solid)</p></li>
+<li><p>Laser table with N2 laser, monochromator, PMT</p></li>
+<li><p>Oscilloscope</p></li>
+</ul>
+</section>
+<section id="a-150-mm-kcl-stock-solution-500-ml">
+<h3>A. 150 mM KCl stock solution, 500 mL<a class="headerlink" href="#a-150-mm-kcl-stock-solution-500-ml" title="Link to this heading">#</a></h3>
+<p>(Use an existing solution if it is already prepared, and note the solution
+reference in your notebook)</p>
+<ol class="arabic">
+<li><div class="line-block">
+<div class="line">Add _________ (tgt: 5.59 g) KCl powder to reach a 150mM F.C.</div>
+<div class="line">FW: 74.55 g/mol</div>
+<div class="line">Ref:</div>
+</div>
+</li>
+<li><p>Add ~250 mL of ddH<sub>2</sub>O and swirl to disolve the KCl powder</p></li>
+<li><p>Top up to a final volume of 500 mL with ddH<sub>2</sub>O</p></li>
+</ol>
+</section>
+<section id="b-0-5m-h2so4-stock-solution-500-ml">
+<h3>B. 0.5M H<sub>2</sub>SO<sub>4</sub> stock solution, 500 mL<a class="headerlink" href="#b-0-5m-h2so4-stock-solution-500-ml" title="Link to this heading">#</a></h3>
+<p>(Use an existing solution if it is already prepared, and note the solution
+reference in your notebook)</p>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>Use gloves and work inside of a fumehood</p>
+<p>Do not add water to acid. Drop-by-drop, add acid to a large volume of water.</p>
+</div>
+<ol class="arabic">
+<li><p>Add 400 mL of ddH<sub>2</sub>O</p></li>
+<li><div class="line-block">
+<div class="line">Add _________ (tgt: 6.9 mL) of concentrated sulfuric acid
+(36 N, H<sub>2</sub>SO<sub>4</sub>) to reach a 0.5M F.C.</div>
+</div>
+</li>
+<li><p>Top up the solution to a final volume of 500 mL with ddH<sub>2</sub>O</p></li>
+</ol>
+</section>
+<section id="c-25-um-quinine-sulfate-in-0-5m-h2so4-stock-solution-100-ml">
+<h3>C. 25 uM quinine sulfate in 0.5M H<sub>2</sub>SO<sub>4</sub> stock solution, 100 mL<a class="headerlink" href="#c-25-um-quinine-sulfate-in-0-5m-h2so4-stock-solution-100-ml" title="Link to this heading">#</a></h3>
+<p>(Use an existing solution if it is already prepared, and note the solution
+reference in your notebook)</p>
+<ol class="arabic">
+<li><div class="line-block">
+<div class="line">Measure 100 mL of 0.5M H<sub>2</sub>SO<sub>4</sub></div>
+<div class="line">Ref:</div>
+</div>
+</li>
+<li><div class="line-block">
+<div class="line">Add _________ (tgt: 2.0 mg) quinine sulfate dihydrate powder to reach a
+25 uM F.C.</div>
+<div class="line">FW: 782.9 g/mol</div>
+<div class="line">Ref:</div>
+</div>
+</li>
+</ol>
+</section>
+<section id="d-10um-quinine-sulfate-in-0-40mm-kcl-samples-5x5-ml">
+<h3>D. 10uM quinine sulfate in 0-40mM KCl samples, 5x5 mL:<a class="headerlink" href="#d-10um-quinine-sulfate-in-0-40mm-kcl-samples-5x5-ml" title="Link to this heading">#</a></h3>
+<ol class="arabic">
+<li><div class="line-block">
+<div class="line">Add 2.0 mL of 25 uM quinine sulfate in 0.5M H<sub>2</sub>SO<sub>4</sub></div>
+<div class="line">Ref:</div>
+</div>
+</li>
+<li><div class="line-block">
+<div class="line">Prepare and label the following 5 samples by adding 150 mM KCl and
+0.5M H<sub>2</sub>SO<sub>4</sub>:</div>
+<div class="line">Ref:</div>
+</div>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Actual 150 mM KCl</p></th>
+<th class="head"><p>Target 150 mM KCl</p></th>
+<th class="head"><p>F.C. KCl (mM)</p></th>
+<th class="head"><p>Actual 0.5M H<sub>2</sub>SO<sub>4</sub></p></th>
+<th class="head"><p>Target 0.5M H<sub>2</sub>SO<sub>4</sub></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td></td>
+<td><p>1.33 mL</p></td>
+<td><p>40 mM</p></td>
+<td></td>
+<td><p>1.67 mL</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>1.07 mL</p></td>
+<td><p>32 mM</p></td>
+<td></td>
+<td><p>1.93 mL</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>0.80 mL</p></td>
+<td><p>24 mM</p></td>
+<td></td>
+<td><p>2.20 mL</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>0.53 mL</p></td>
+<td><p>16 mM</p></td>
+<td></td>
+<td><p>2.47 mL</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>0.27 mL</p></td>
+<td><p>8 mM</p></td>
+<td></td>
+<td><p>2.73 mL</p></td>
+</tr>
+<tr class="row-odd"><td><p>0.00 mL</p></td>
+<td><p>0.00 mL</p></td>
+<td><p>0 mM</p></td>
+<td></td>
+<td><p>3.00 mL</p></td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol>
+</section>
+<section id="e-continuous-fluorescence-spectra">
+<h3>E. Continuous Fluorescence Spectra<a class="headerlink" href="#e-continuous-fluorescence-spectra" title="Link to this heading">#</a></h3>
+</section>
+<section id="f-time-resolved-fluorescence-experiment">
+<h3>F. Time-Resolved Fluorescence Experiment<a class="headerlink" href="#f-time-resolved-fluorescence-experiment" title="Link to this heading">#</a></h3>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>Be careful: the UV pulse produced by the laser can easily damage your eyes</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Wear plastic glasses that do not transmit the laser light</p>
+</div>
+<ol class="arabic simple">
+<li><p>Turn the Oscilloscope on. It will take a few minutes to boot up.</p></li>
+<li><p>On the front panel of the oscilloscope, in the <code class="docutils literal notranslate"><span class="pre">TRIGGER</span></code> section, make
+sure that “CH 2” is selected as the source, “DC” is chosen for the coupling,
+“POS” is chosen for the slope. Make sure that the BNC cable from the
+photodiode is connected to Channel 2 of the oscilloscope and the
+photomultiplier tube (PMT) is connected to Channel 3. Make sure that the
+resistance for Channel 2 is set to 50 <span class="math notranslate nohighlight">\(\Omega\)</span> (this in the Vertical
+panel of the oscilloscope’s front, on the bottom.)</p></li>
+<li><p>Turn on channel 2. You should see it on the screen. Adjust the vertical
+scale knob for channel 2 to 200 mV per division. Adjust the horizontal
+scale knob of the oscilloscope to 20.0 ns/division. Make sure that the
+“RUN/STOP” button on the oscilloscope is lit up (running).</p></li>
+<li><p>Turn the key on the laser to the <code class="docutils literal notranslate"><span class="pre">ON</span></code> position. Let it warm up for a few
+moments until the <code class="docutils literal notranslate"><span class="pre">CHARGE</span></code> LEF lights up.</p></li>
+<li><p>Turn the knob labeled <code class="docutils literal notranslate"><span class="pre">RATE</span></code> clockwise until it stops (3/4 turn). The
+laser will begin firing at a 20 Hz repetition rate (20 shots/sec).</p></li>
+<li><p>At this point, there should be a sharp spike on the Oscilloscope screen
+about 5 nanoseconds wide at the base. If you do not see a spike, adjust
+the vertical and horizontal scaling knobs until a spike appears. The
+spike should be about 500 mV tall and 5 ns wide. If you still do not see
+a spike, adjust the “Level” knob on the <code class="docutils literal notranslate"><span class="pre">TRIGGER</span></code> panel of the
+oscilloscope. You can see the trigger level represented as an arrow that
+moves up and down to the right of your screen. Ask your TA for help if you
+need assistance with the trigger level. It should be at about 200 mV, and
+the value is displayed at the bottom right corner of the screen in white
+text.</p></li>
+<li><p>Go to the <code class="docutils literal notranslate"><span class="pre">Horiz/Acq</span></code> tab on the top of the screen and choose
+<code class="docutils literal notranslate"><span class="pre">Horizontal/Acquisition</span> <span class="pre">Setup...</span></code>. In this new window, in the Acquisition
+tab, make sure that the “average” button is selected and that the # of
+waveforms being averaged is 50.</p></li>
+<li><p>There should be a stable laser pulse on the screen with a Gaussian shape.
+Press the <code class="docutils literal notranslate"><span class="pre">Run/Stop</span></code> button on the oscilloscope and the waveform should
+remain frozen on the screen. You can stop the laser firing now. Use the
+cursors to determine the full-width at half-max (FWHM) of this laser
+signal. Record this in your lab notebook. The FWHM is the width of the
+signal at half of its maximum height.</p></li>
+<li><p>Adjust the trigger Level knob until the arrow is at about 1/3 of the
+signal’s height.</p></li>
+<li><p>Save this waveform as you did with the waveforms from the wavefunction
+generator. Make sure to select <code class="docutils literal notranslate"><span class="pre">channel</span> <span class="pre">2</span></code> as the source in the waveform
+options tab.</p></li>
+<li><p>Make sure that the cable from the High Voltage Power Supply is connected
+to the high voltage port of the PMT (photomultiplier tube). Ask you TA to
+help if it is not. Turn on channel 3 on the oscilloscope.</p></li>
+</ol>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>Make sure that the high voltage power supply is off before you proceed.</p>
+<p>Make sure that the laser is not firing.</p>
+</div>
+<ol class="arabic simple" start="12">
+<li><p>Place the cuvettee with your first sample of 0.0 KCl in the cuvette
+holder sample chamber and replace the sample chamber lid.</p></li>
+<li><p>Make sure the “High Voltage” switch on the High Voltage Power Supply is in
+the off position and then push the “power” swtich to the on position. A
+red light should come on.</p></li>
+</ol>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>DO NOT turn on the high voltage power supply to the PMT while the sample
+chamber is open. Doing so will destroy the PMT!</p>
+</div>
+<ol class="arabic simple" start="14">
+<li><p>After a few moments, the white light under “High Voltage” should come on,
+signifying the power supply is warmed up.</p></li>
+<li><p>Make sure all 5 of the <code class="docutils literal notranslate"><span class="pre">output</span> <span class="pre">voltage</span></code> selection knobs are set to <code class="docutils literal notranslate"><span class="pre">0</span></code>
+and the <code class="docutils literal notranslate"><span class="pre">polarity</span></code> should be set to negative, <code class="docutils literal notranslate"><span class="pre">-</span></code>. Push the
+<code class="docutils literal notranslate"><span class="pre">high</span> <span class="pre">voltage</span></code> switch to the “on” position. The red light should come on.</p></li>
+<li><p>Turn the laser <code class="docutils literal notranslate"><span class="pre">rate</span></code> knob to the highest level (20 Hz) to begin firing
+the laser again.</p></li>
+<li><p>Set the vertical setting of channel 3 to 10 mV/div. Make sure the
+horizontal scale is at 20 ns/div.</p></li>
+<li><p>Adjust the high voltage power supply <code class="docutils literal notranslate"><span class="pre">output</span> <span class="pre">voltage</span></code> knobs in increments
+of 100 V (2nd knob from the left) until you start to see a signal on the
+oscilloscope for channel 3. This is the signal from the photomultiplier
+tube (PMT) that should be showing you the fluorescence of quinine. It
+typically takes about 600 V to get a good signal. If you need to exceed
+500 V, turn all voltage knobs to 0, use the first knob from the left to
+apply 500 V, and then use the next knob to apply another 100 V, for a
+total of 600 V.</p></li>
+</ol>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>DO NOT EXCEED 800 V as this could cause permanent damage to the PMT</p>
+</div>
+<ol class="arabic simple" start="19">
+<li><p>At the 500-700 V setting of the power supply, a negative voltage signal
+with a minimum of around -20 to -40 millivolts and a full width of around
+70 ns should be seen. Adjust the horizontal position knob on the
+oscilloscope so that the full signal can be seen. This is the fluorescence
+signal you will use for your measurements. Once you have a signal on the
+screen, press the <code class="docutils literal notranslate"><span class="pre">RUN/STOP</span></code> button on the oscilloscope to freeze the
+signal on the screen. Turn the “rate” knob on the laser to “0” to stop it
+from firing.</p></li>
+<li><p>Go to the math tab and <code class="docutils literal notranslate"><span class="pre">math</span> <span class="pre">Setup</span></code> to invert the waveform so that the
+signal is now positive. Choose the <code class="docutils literal notranslate"><span class="pre">math</span> <span class="pre">1</span></code> tab, turn its display button
+to <code class="docutils literal notranslate"><span class="pre">on</span></code>, clear any equation in the equation editor, and click on the
+<code class="docutils literal notranslate"><span class="pre">editor</span></code> button. Select the invert button, choose channel 3, and then
+close the parentheses. Math 1 should not be defined as <code class="docutils literal notranslate"><span class="pre">INV(Ch2)</span></code>. Click
+ok and you should see the inverted math function on the screen. Make sure
+none of the signal goes off the screen. You may have to adjust the scaling
+settings for the math function in the <code class="docutils literal notranslate"><span class="pre">position/scale</span></code> menu from the Math
+tab.</p></li>
+<li><p>Change the cursor settings, as you did with the wavefunction generator
+procedure, so that you can measure the math 1 function. From the cursors
+tab, cursors should be <code class="docutils literal notranslate"><span class="pre">on</span></code>, cursor type should be <code class="docutils literal notranslate"><span class="pre">waveform</span></code>, and the
+source for cursor 1 and cursor 2 in the cursor setup screen should be
+math 1, or whatever math function you used to invert the signal from
+channel 3.</p></li>
+<li><p>Place one marker at the peak of your fluorescence signal and then another
+marker to the right of it, where the signal reaches about 1/e (37%) of the
+height of the signal’s maximum. The difference of time between cursor
+1 and 2 is shown to you on the right of the screen. This amount of time is
+the approximate lifetime of the fluorescence, from when the signal is at
+its highest until it is almost completely decayed. Record this value for
+comparison to the fitted values you will find later.</p></li>
+<li><p>Save this waveform. Make sure to choose <code class="docutils literal notranslate"><span class="pre">math1</span></code> or whichever math
+function you used to invert the signal from channel 3 as the source
+under the <code class="docutils literal notranslate"><span class="pre">waveform</span> <span class="pre">options</span></code> menu after you click <code class="docutils literal notranslate"><span class="pre">save</span> <span class="pre">as</span></code>. Remember
+to save in CSV format.</p></li>
+<li><p>To proceed to another trial, being firing the laser again and press the
+<code class="docutils literal notranslate"><span class="pre">Run/Stop</span></code> button on the oscilloscope to begin collecting data again.
+Press <code class="docutils literal notranslate"><span class="pre">Run/Stop</span></code> again to freeze a new signal on the screen to measure
+its lifetime and save it.</p></li>
+<li><p>When you have acquired 3 trials for one of your samples, stop the laser
+from firing and <strong>turn all knobs on the high voltage power supply to zero
+and turn the ``high voltage`` toggle switch to OFF</strong>. You can now open
+the sample chamber and get three trials of data for the rest of your samples.</p></li>
+</ol>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>Make sure to stop the laser from firing in between measurements and to
+have the high voltage power supply at 0 V when opening the sample chamber.</p>
+</div>
+<ol class="arabic simple" start="26">
+<li><p>When finished with the experiment, turn the laser “rate” knob to the off
+position and then turn the key to the off position. Make sure all knobs
+on the power supply are set to 0 and turn the “high voltage” switch to
+off. Finally, turn the <code class="docutils literal notranslate"><span class="pre">power</span></code> switch of the power supply to off.</p></li>
+<li><p>Close the TekScope program and have your TA eject the flash drive so you
+can retrieve your data. Turn the oscilloscope off.</p></li>
+<li><p>Obtain 1 UV-VIS spectrum per sample and 1 fluorometer spectrum just for
+the sample with no quencher, for a total of 6 more graphs. The instructions
+for these instruments are next to them in the lab.</p></li>
+</ol>
+</section>
+</section>
+<section id="results-and-discussion">
+<h2>Results and Discussion<a class="headerlink" href="#results-and-discussion" title="Link to this heading">#</a></h2>
+<section id="calculations">
+<h3>Calculations<a class="headerlink" href="#calculations" title="Link to this heading">#</a></h3>
+<section id="time-resolved-fit">
+<h4>Time-resolved fit<a class="headerlink" href="#time-resolved-fit" title="Link to this heading">#</a></h4>
+<p>From the time-resolved fluorescence decay data, remove the points preceding
+the excitation and laser pulse. The objective is to have a single exponential
+decay profile.</p>
+<p>With the cleaned data, use a non-linear regression algorithm to fit the
+following function:</p>
+<div class="math notranslate nohighlight">
+\[I(t) = I(0) e^{-k \cdot t}\]</div>
+<p>The independent variable is time, t, the dependent variable is the intensity
+at this time, I(t), and the two fit parameters are the initial intensity, I(0),
+and the decay rate, k.</p>
+<div class="math notranslate nohighlight">
+\[y = p_0 * exp(-p_1 * x)\]</div>
+<p>Report the fit initial intensities, I(0), and decay rates, k, for all of your
+decay profiles and report their fit error bars and the <span class="math notranslate nohighlight">\(\chi^2_{red}\)</span> of
+the fit.</p>
+<p>Explain whether quinine is a dynamic quencher or a static quencher.</p>
+<p>The literature value for the lifetime, <span class="math notranslate nohighlight">\(\tau = k_f^{-1} = 19.3 \pm 0.6 ns\)</span>
+(95% confidence limits) <a class="reference internal" href="#barrow" id="id8"><span>[Barrow]</span></a>. Compare this with your results and discuss
+any discrepancies.</p>
+<div class="note admonition">
+<p class="admonition-title">Example exponential plot and fits</p>
+<p>The following is an example time-resolved fluorescence decay profile with
+the extra points before the fluorescence begins (before truncation) and the
+profile with these extra points removed (after truncation).</p>
+<figure class="align-default">
+<img alt="../../_images/exp_fit.png" class="plot-directive" src="../../_images/exp_fit.png" />
+</figure>
+</div>
+</section>
+<section id="quencher-rate-fit">
+<h4>Quencher rate fit<a class="headerlink" href="#quencher-rate-fit" title="Link to this heading">#</a></h4>
+<p>Plot the apparent quencher concentration, [Q], as a function of the
+fluorescence decay rates, k<sub>app</sub>, concentrations of the quencher.
+Describe whether
+<span class="math notranslate nohighlight">\(\ce{Cl-}\)</span> behaves like a dynamic quencher (equation
+<a class="reference internal" href="#equation-fluoro-dynamic-rate-constant">(7)</a>) or a static quencher (equation
+<a class="reference internal" href="#equation-fluoro-static-rate-constant">(10)</a>). Report the rates or equilibrium constants,
+and their associated errors.</p>
+<p>The best available literature value of <span class="math notranslate nohighlight">\(k_Q = 6.2 \cdot 10^9 M^{-1}s^{-1}\)</span>
+determined from lifetime measurements by Barrow and Lentz <a class="reference internal" href="#barrow" id="id9"><span>[Barrow]</span></a>. This was
+determined in 0.05 M H2SO4 whereas you obtained your data in 0.5 M H2SO4.
+The viscosity of 0.05 M H2SO4 is very close to that of pure water
+(not the same as 0.5 M). Use the equation <a class="reference internal" href="#equation-diffusion-controlled">(8)</a> for the
+diffusion-controlled rate, <span class="math notranslate nohighlight">\(k_D\)</span> to quantitatively compare your results
+with these and discuss any discrepancies.</p>
+<div class="note admonition">
+<p class="admonition-title">Example apparent rate fits with quencher concentration</p>
+<p>The following is an example plot of the quencher concentration, [Q],
+and the apparent fluorescence decay rate, k<sub>app</sub>, for dynamic
+quencher and a static quencher.</p>
+<figure class="align-default">
+<img alt="../../_images/quencher_fit.png" class="plot-directive" src="../../_images/quencher_fit.png" />
+</figure>
+<p>The fit rates are <span class="math notranslate nohighlight">\(k' = (1.00000 \pm 0.000004) \cdot 10^7 s^{-1}\)</span> and
+<span class="math notranslate nohighlight">\(k_Q = (9.9 \pm 0.2)  \cdot 10^4 s^{-1} M^{-1}\)</span> for the dynamic quencher and
+<span class="math notranslate nohighlight">\(k' = (1.00000 \pm 0.000004) \cdot 10^7 s^{-1}\)</span> for the static quencher.
+The reported error estimates are 1 standard deviation (s.d.).</p>
+</div>
+</section>
+<section id="stern-volmer-fit">
+<h4>Stern-Volmer fit<a class="headerlink" href="#stern-volmer-fit" title="Link to this heading">#</a></h4>
+<p>The Stern-Volmer equation <a class="reference internal" href="#equation-stern-volmer">(11)</a> relates the concentration of
+excited fluorophore, [F<sup>*</sup>], to the concentration of the quencher.
+We do not know these concentrations, but we do know that the initial intensity
+of fluorescence, I(0), is directly proportional to [F<sup>*</sup>]–e.g. when
+you double [F<sup>*</sup>], the initial fluorescent intensity, I(0), doubles, and
+when there is no excited fluorophore, [F<sup>*</sup>] = 0, the initial fluorescent
+intensity is also zero, I(0) = 0.</p>
+<div class="math notranslate nohighlight">
+\[I(0) = C [F^*]\]</div>
+<p>Where the factor C is a simple scaling constant.</p>
+<p>The Stern-Volmer equation can be recast in terms of the initial fluorescent
+intensity.</p>
+<div class="math notranslate nohighlight">
+\[\frac{\{I(0)\}_0}{\{I(0)\}_Q} = \frac{[F^*]_{0}}{[F^*]} = 1 + K [Q]\]</div>
+<p>Where <span class="math notranslate nohighlight">\(\{I(0)\}_0\)</span> is the initial fluorescence intensity at the quencher
+concentration of 0 mM, and <span class="math notranslate nohighlight">\(\{I(0)\}_Q\)</span> is the initial fluorescence
+intensity at the quencher concentration of [Q]. The constant ‘K’ is
+<span class="math notranslate nohighlight">\(k_q \tau\)</span> for a dynamic quencher and <span class="math notranslate nohighlight">\(K_{eq}\)</span> for a static
+quencher.</p>
+<p>Collect the initial fluorescence intensities, I(0), from the mono-exponential
+fits. For each concentration of the quencher, calculate the mean value and the
+mean error. Plot the quencher concentration, [Q], as a function of
+<span class="math notranslate nohighlight">\(\{I(0)\}_0 / \{I(0)\}_Q\)</span>. Fit the plot to a linear regression and report
+the associated errors on the slope and intercept. The intercept should be
+close to 1.0.</p>
+<div class="note admonition">
+<p class="admonition-title">Example Stern-Volmer fit of initial fluorescence intensities</p>
+<p>The following is an example Stern-Volmer plot  initial fluorescence
+intensities from time-resolved fluorescence experiments.</p>
+<figure class="align-default">
+<img alt="../../_images/stern_volmer_fit.png" class="plot-directive" src="../../_images/stern_volmer_fit.png" />
+</figure>
+</div>
+</section>
+</section>
+<section id="questions">
+<h3>Questions<a class="headerlink" href="#questions" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Using the absorbance and fluorescence spectra of quinine sulfate below
+(see <a class="reference internal" href="#quinine-spectra"><span class="std std-numref">Fig. 5</span></a>), explain why the fluorescence emission
+shows up to the <em>right</em> of the absorbance in the spectrum.</p></li>
+<li><p>Using the absorbance and fluorescence spectra of quinine sulfate below
+(see <a class="reference internal" href="#quinine-spectra"><span class="std std-numref">Fig. 5</span></a>), explain why the experiment was performed
+with a 337.1 nm laser and the fluorescence was detected at 489 nm.</p></li>
+<li><p>The absorbance spectra of atoms in atomic absorption spectroscopy show
+sharp lines with widths of a fraction of a nanometer. Explain why the
+width of the absorption spectrum of quinine sulfate below is much larger
+(see <a class="reference internal" href="#quinine-spectra"><span class="std std-numref">Fig. 5</span></a>, below).</p></li>
+<li><p>At ~390-400 nm in the absorbance and fluorescence spectra of quinine
+sulfate, there is fluorescence emission at a <em>smaller</em> wavelength than
+in the absorbance spectrum. Why? (see <a class="reference internal" href="#quinine-spectra"><span class="std std-numref">Fig. 5</span></a>, below)</p></li>
+<li><p>For fluorescence emission and absorbance processes, we wrote the kinetic
+equations using <em>irreversible</em> reactions–i.e. one-sided arrows. Why are
+these irreversible processes?</p></li>
+</ol>
+<figure class="align-default" id="id13">
+<span id="quinine-spectra"></span><img alt="Quinine sulfate absorbance and fluorescence spectra" src="../../_images/quinine_absorbance_fluorescence.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 5 </span><span class="caption-text">The absorbance and fluorescence spectra of quinine sulfate.</span><a class="headerlink" href="#id13" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+<section id="references">
+<h2>References<a class="headerlink" href="#references" title="Link to this heading">#</a></h2>
+<div role="list" class="citation-list">
+<div class="citation" id="jphotochem1990" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">JPhotochem1990</a><span class="fn-bracket">]</span></span>
+<p>Pant, D.; Tripathi, U. C.; Joshi, G. C.; Tripathi, H. B.; Pant, D. D. J. Photochem. Photobio. A 1990, 51, 313-325.</p>
+</div>
+<div class="citation" id="harris" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>Harris<span class="fn-bracket">]</span></span>
+<span class="backrefs">(<a role="doc-backlink" href="#id2">1</a>,<a role="doc-backlink" href="#id3">2</a>)</span>
+<p>Harris, Daniel C., and Michael D. Bertolucci. Symmetry and Spectroscopy: An Introduction to Vibrational and Electronic Spectroscopy. New edition. New York, NY: Dover Publications, 1989.</p>
+</div>
+<div class="citation" id="lakowicz" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id4">Lakowicz</a><span class="fn-bracket">]</span></span>
+<p>Lakowicz, Joseph R., ed. “Quenching of Fluorescence.” In Principles of Fluorescence Spectroscopy, 277–330. Boston, MA: Springer US, 2006. <a class="reference external" href="https://doi.org/10.1007/978-0-387-46312-4_8">https://doi.org/10.1007/978-0-387-46312-4_8</a>.</p>
+</div>
+<div class="citation" id="gutow" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id5">Gutow</a><span class="fn-bracket">]</span></span>
+<p>Gutow, J. H.; Zare, R. N. J. Phys. Chem. 1992, 96, 2534-2543.</p>
+</div>
+<div class="citation" id="physicalchemistry" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id6">PhysicalChemistry</a><span class="fn-bracket">]</span></span>
+<p>Engel, Thomas, and Philip Reid. Physical Chemistry. 3rd edition. Boston: Pearson, 2012.</p>
+</div>
+<div class="citation" id="barrow" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>Barrow<span class="fn-bracket">]</span></span>
+<span class="backrefs">(<a role="doc-backlink" href="#id7">1</a>,<a role="doc-backlink" href="#id8">2</a>,<a role="doc-backlink" href="#id9">3</a>)</span>
+<p>Barrow, David A., and Barry R. Lentz. “Quinine as a Fluorescence Lifetime Standard: Conditions for Effectively Homogeneous Decay.” Chemical Physics Letters 104, no. 2 (February 3, 1984): 163–67. <a class="reference external" href="https://doi.org/10.1016/0009-2614(84)80189-X">https://doi.org/10.1016/0009-2614(84)80189-X</a>.</p>
+</div>
+</div>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../nmr/index.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Nuclear Magnetic Resonance</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../diffraction/index.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Nanoparticle</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#energy-levels-and-transitions">Energy Levels and Transitions</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fluorescence">Fluorescence</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#time-resolved-fluorescence-and-quenching">Time-Resolved Fluorescence and Quenching</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#continuous-fluorescence-and-quenching">Continuous Fluorescence and Quenching</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#oxygen-quenching">Oxygen Quenching</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#experimental-setup">Experimental Setup</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#procedures">Procedures</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#materials">Materials</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-150-mm-kcl-stock-solution-500-ml">A. 150 mM KCl stock solution, 500 mL</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#b-0-5m-h2so4-stock-solution-500-ml">B. 0.5M H<sub>2</sub>SO<sub>4</sub> stock solution, 500 mL</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#c-25-um-quinine-sulfate-in-0-5m-h2so4-stock-solution-100-ml">C. 25 uM quinine sulfate in 0.5M H<sub>2</sub>SO<sub>4</sub> stock solution, 100 mL</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#d-10um-quinine-sulfate-in-0-40mm-kcl-samples-5x5-ml">D. 10uM quinine sulfate in 0-40mM KCl samples, 5x5 mL:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#e-continuous-fluorescence-spectra">E. Continuous Fluorescence Spectra</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#f-time-resolved-fluorescence-experiment">F. Time-Resolved Fluorescence Experiment</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#results-and-discussion">Results and Discussion</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#calculations">Calculations</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#time-resolved-fit">Time-resolved fit</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#quencher-rate-fit">Quencher rate fit</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#stern-volmer-fit">Stern-Volmer fit</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#questions">Questions</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Chem 343 Instructors
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023, Chem 343 Instructors.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.en"><img src="http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-nc-nd.svg" /> CC BY-NC-ND 4.0</a>
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
