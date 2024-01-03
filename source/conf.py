@@ -33,7 +33,7 @@ html_css_files = [
     'custom.css',
 ]
 
-html_title = "Physical Chemistry Labbook"
+html_title = "Physical Chemistry Lab Book"
 # html_logo = "path/to/logo.png"
 # html_favicon = "path/to/favicon.ico"
 
@@ -41,7 +41,7 @@ html_theme_options = {
     "extra_footer": '<a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.en">'
                     '<img src="http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-nc-nd.svg" />'
                     ' CC BY-NC-ND 4.0</a>',
-    "logo": {"text": "Physical Chemistry Labbook",
+    "logo": {"text": "Physical Chemistry Lab Book",
              "image_light": "_static/logos/CAMP.HRZ.SM.RGB.SVG",
              "image_dark": "_static/logos/CAMP.HRZ.SM.INVT.RBG.SVG",
     }
