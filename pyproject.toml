@@ -1,11 +1,15 @@
 [project]
 name = "pchem_labbook"
-readme = "README.rst"
+readme = "README.md"
 version = "0.1"
 requires-python = ">=3.8"
 dependencies = [
     "sphinx",
     "sphinx-book-theme",
     "sphinx_design",
-    "matplotlib"
+    "matplotlib",
+    "scipy"
 ]
+
+[tool.setuptools.packages.find]
+include = ["source"]

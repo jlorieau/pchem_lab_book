@@ -28,7 +28,7 @@ numfig = True
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
 html_theme = "sphinx_book_theme"
-html_static_path = ['_static']
+html_static_path = ['_static', '_static/logos']
 html_css_files = [
     'custom.css',
 ]
@@ -41,6 +41,14 @@ html_theme_options = {
     "extra_footer": '<a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.en">'
                     '<img src="http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-nc-nd.svg" />'
                     ' CC BY-NC-ND 4.0</a>',
+    "logo": {"text": "Physical Chemistry Labbook",
+             "image_light": "_static/logos/CAMP.HRZ.SM.RGB.SVG",
+             "image_dark": "_static/logos/CAMP.HRZ.SM.INVT.RBG.SVG",
+    }
+}
+
+html_sidebars = {
+    "**": ["navbar-logo.html", "sbt-sidebar-nav.html", "search-field.html"]
 }
 
 # -- Options for LaTeX output ------------------------------------------------

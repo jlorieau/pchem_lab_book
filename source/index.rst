@@ -17,6 +17,7 @@ Physical Chemistry Labbook
     experiments/thermo/index
     experiments/nmr/index
     experiments/lif/index
+    experiments/diffraction/index
 
 .. toctree::
     :maxdepth: 1

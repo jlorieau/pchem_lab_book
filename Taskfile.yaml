@@ -20,6 +20,7 @@ tasks:
 
   install:
     desc: Install the package in development (edit) mode
+    internal: true
     cmds:
       - python3 -m pip install -e "."
     sources:
@@ -36,9 +37,16 @@ tasks:
     dir: .
     cmds:
       - "{{.SPHINX_BUILD}} -M html {{.SPHINX_SOURCE_DIR}} {{.SPHINX_BUILD_DIR}} -E -a -W {{.SPHINX_OPTS}}"
-      - "{{.SPHINX_BUILD}} -M latexpdf {{.SPHINX_SOURCE_DIR}} {{.SPHINX_BUILD_DIR}} -E -a -W {{.SPHINX_OPTS}}"
+#      - "{{.SPHINX_BUILD}} -M latexpdf {{.SPHINX_SOURCE_DIR}} {{.SPHINX_BUILD_DIR}} -E -a -W {{.SPHINX_OPTS}}"
     sources:
       - "**/*.md"
       - "**/*.rst"
       - "source/_static/**"
       - "source/conf.py"
+
+  clean:
+    desc: Clean the built documentation
+    dir: .
+    cmds:
+      - "{{.SPHINX_BUILD}} -M clean {{.SPHINX_SOURCE_DIR}} {{.SPHINX_BUILD_DIR}} -E -a -W {{.SPHINX_OPTS}}"
+
